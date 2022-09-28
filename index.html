@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    
     <style>
         *{
             padding: 0;
@@ -206,6 +209,23 @@
         border-radius: 20px;
         position:static;
        }
+
+       #login:checked~#register{
+        display: block;
+       }
+       #register{
+        height: 700px;
+        width: 800px;
+        position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 5;
+        display: none;
+        /* visibility: hidden; */
+       }
+      
     </style>
 </head>
 <body>
@@ -224,7 +244,9 @@
 
     <div id="slideshow"></div>
     <div id="category"></div>
+    <div id="footer"></div>
     
 </body>
 </html>
 <script type="module" src="./scripts/index.js"></script>
+

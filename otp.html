@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <link rel="stylesheet" href="./styles/otp.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <div id="register">
+        <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-times" id="btn"></i>
+        <!-- <i class="fas fa-times" id="cancel"></i> -->
+      </label>
+      <div class="sidebar">
+          <div id="head">
+              <img src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png?dim=256x0" alt="">
+              <img src="https://assets.pharmeasy.in/web-assets/dist/1fe1322a.svg?dim=256x0" alt="">
+          </div>
+
+          <div id="form">
+              <h3>Enter OTP sent to  <span></span></h3>
+              <!-- <input type="text" id="query" > -->
+              <!-- <input id="b" type="number" >
+              <input id="c" type="number" >
+              <input id="d" type="number" > -->
+              <input type="text" id="query">
+              <div id="new">
+                <a href="login.html"><h4>Change Number</h4></a>
+                <h4>Resend OTP</h4>
+              </div>
+              <button id="submit">Submit</button>
+              <p>By clicking continue, you agree with our <span>Privacy Policy</span></p>
+          </div>
+      
+      </div>
+    </div>
+</body>
+</html>
+<script>
+    let back = document.getElementById('btn');
+    back.addEventListener('click',function(){
+      window.location.href='index.html'
+    })
+
+    let num = JSON.parse(localStorage.getItem('number'));
+
+    let span = document.querySelector('span');
+    span.innerText = '+91 '+num;
+
+    let otp = JSON.parse(localStorage.getItem('otp'));
+
+    let data = document.querySelector('#query').value
+    
+
+
+    let user = document.getElementById('submit');
+    user.addEventListener('click',function () {
+        console.log(data)
+       //console.log(otp)
+        if(otp==data){
+        alert('login successful')
+        window.location.href='index.html'
+        }
+        else{
+            alert('Wrong OTP');
+        }
+    })
+    
+</script>

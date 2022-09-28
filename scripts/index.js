@@ -1,8 +1,8 @@
-import navbar from "../components/navbar.js";
+import {navbar,footer} from "../components/navbar.js";
 
 document.getElementById("navbar").innerHTML=navbar()
 
-
+document.getElementById('footer').innerHTML=footer();
 
  var slideshow = () => {
     let arr =[ "https://cms-contents.pharmeasy.in/banner/fcf06e6cf90-STAYHOMEDWEB.jpg?dim=1440x0&dpr=1.25&q=100",
@@ -111,4 +111,12 @@ function appendCategories(data){
     })
 }
 appendCategories(data)
+
+
+let user = document.getElementById('login');
+user.addEventListener('click',function(){
+    window.location.href='login.html'
+    //console.log('in')
+   
+})
 
