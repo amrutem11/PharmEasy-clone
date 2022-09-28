@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        #navbar{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            font-size: 20px ;
+            font-family: sans-serif;
+            margin-top: 25px;
+            position:sticky;
+            background-color: white;
+            width: 100%;
+            
+        }
+        #pin{
+            display: block;
+            /* display: inline-block; */
+
+        }
+        #navbar>img{
+            margin-left: 80px;
+        }
+        
+        #search{
+            border:1px solid grey;
+          align-items: center;
+            width: 450px;
+            font-size: 14px;
+            border-radius: 30px;
+            margin-left: 30px;
+            justify-content: space-around;
+            height: 60px;
+            margin-left: 50px;
+
+        }
+        #search>img{
+            margin-left: 20px;
+            margin-top: 10px;
+            width: 25px;
+            height: 25px;
+        }
+        #search>input{
+            margin-left: 20px;
+            /* margin-top: 8px; */
+            background: transparent;
+            border: 0;
+            outline: 0;
+            width: 200px;
+            margin-top: 0;
+            font-size: 20px;
+            text-align: center;
+            padding-top: 0;
+            /* border: 1px solid green; */
+
+        }
+        #search>button{
+            width: 130px;
+            height:50px;
+            margin-bottom: 5px;
+            border-radius: 30px;
+            background-color: #108472;
+            color: white;
+            font-size: 20px;
+            border: none;
+            margin-left: 45px;
+            margin-top: 5px;
+        }
+        #login{
+            text-decoration: none;
+            gap: 5px;
+            color: black;
+            margin-left: 15px;
+
+        }
+      
+        #login_div,#offer_div,#cart_main{
+            display: flex;
+            margin-left: 15px;
+           
+            
+        }
+        #person_img{
+            height: 30px;
+            width: 30px;
+           
+             margin-top: 13px;
+            outline:none; 
+            
+        }
+        #text{
+            font-size: 20px;
+            margin-left: 10px;
+            margin-top: 17px;
+            
+        }
+    
+       #showmore{
+        width: 10px;
+        height: 10px;
+    
+       }
+       #offer_img{
+        height: 30px;
+            width: 30px;
+             margin-top: 13px;
+            outline:none; 
+       }
+       #offer{
+        text-decoration: none;
+        gap: 5px;
+        color: #000;
+
+       }
+       #offer_txt{
+        font-size: 20px;
+            margin-left: 10px;
+            margin-top: 17px;
+
+       }
+       #cart_img{
+        height: 30px;
+            width: 30px;
+             margin-top: 13px;
+            outline:none; 
+       }
+       #anchor_tags a{
+        text-decoration: none;
+        color: #000;
+        text-align: center;
+        margin-top: 8px;
+        
+       }
+       #anchor_tags{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 35px;
+      
+        font-size: 20px;
+        font-family: sans-serif;
+        
+       
+       }
+       #below_main{
+        width: 100%;
+        height: 44px;
+        background-color: lightblue;
+        position: sticky;
+       }
+        #slideshow{
+            border-radius: 5%;
+            margin-top: 30px;
+
+        }
+        #slideshow>img{
+            width: 95%;
+            height: 300px;
+            margin-left: 2%;
+            border-radius: 10px;
+        }
+        #count{
+            position: absolute;
+            top: -4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f47779;
+            border: 0.5px solid #fff;
+            border-radius: 8px;
+            width: 16px;
+            height: 16px;
+            color: #fff;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 16px;
+        }
+        #category{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 70px;
+            text-align: center;
+            margin-top: 40px;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+       #image{
+        width: 120px;
+        height: 100px;
+       }
+       #container:hover{
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        width: 160px;
+        height: 200px;
+        border-radius: 20px;
+        position:static;
+       }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+   <div id="below_main">
+    <div id="anchor_tags">
+        <a href="">Medicine</a>
+        <a href="">Healthcare</a>
+        <a href="">Lab Test</a>
+        <a href="">Offers</a>
+        <a href="">PLUS</a>
+        <a href="">Health Blogs</a>
+        
+    </div>
+   </div>
+
+    <div id="slideshow"></div>
+    <div id="category"></div>
+    
+</body>
+</html>
+<script type="module" src="./scripts/index.js"></script>
