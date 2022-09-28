@@ -29,7 +29,7 @@ function navbar(){
             <img id="offer_img" src="./images/offer.png" alt="">
         </div>
         <div id="offer_txt">
-            <a id="offer" href="#offer"><span>Offers</span></a>
+            <a id="offer" href="offer.html"><span>Offers</span></a>
         </div>
 
     </div>
