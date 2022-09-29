@@ -1,6 +1,4 @@
-// import navbar from "../components/navbar.js";
 
-// document.getElementById("main_nav").innerHTML=navbar()
 
 
 
@@ -166,26 +164,7 @@ let newlaunches_arr =[
         name:"All Out Ultra Mosquito Repellant Refills (Pack Of 6)",
         price:"MRP ₹438.00"
     },
-    // {
-    //     img:"https://cdn01.pharmeasy.in/dam/products_otc/051229/dabur-badam-tail-100ml-2-1652176042.jpg?dim=1440x0",
-    //     name:"Dabur Badam Tail 100ml",
-    //     price:"MRP ₹425.00"
-    // },
-    // {
-    //     img:"https://cdn01.pharmeasy.in/dam/products_otc/247233/slc-face-wash-tube-of-50-g-3-1643020421.jpg?dim=1440x0",
-    //     name:"Slc Face Wash Tube Of 50 G",
-    //     price:"MRP  ₹325.00"
-    // },
-    // {
-    //     img:"https://cdn01.pharmeasy.in/dam/products_otc/I38062/glolip-cream-10gm-1-1663677651.jpg?dim=1440x0",
-    //     name:"Glolip Cream 10gm",
-    //     price:"MRP ₹250.00"
-    // },
-    // {
-    //     img:"https://cdn01.pharmeasy.in/dam/products_otc/H61321/kiwi-paste-black-40-gm-2-1645196480.jpg?dim=1440x0",
-    //     name:"Kiwi Paste Black - 40 Gm",
-    //     price:"MRP ₹70.00"
-    // },
+
 
 
 
@@ -301,7 +280,7 @@ function appendShopBYCategories(shop_by_cat){
 
         let image=document.createElement("img")
         image.src=el.img
-        // image.setAttribute("id","shop_by_cat_img")
+        
 
         image_div.append(image)
 
@@ -385,11 +364,7 @@ let popularincity_arr =[
         name:"Whisper Ultra Clean Size Xl Plus Sanitary Pads Packet Of 44",
         price:"MRP ₹549.00"
     },
-    // {
-    //     img:"https://cdn01.pharmeasy.in/dam/products_otc/192351/i-pill-tab-1-1641398682.jpg?dim=1440x0",
-    //     name:"I Pill Tab",
-    //     price:"MRP ₹110.00"
-    // },
+
 
 
 
@@ -448,10 +423,6 @@ image_div.setAttribute("id","imageofpopularincity")
 }
 appendPopularInCity(popularincity_arr)
 
-
-
-
-
 document.querySelector(".offer_login_div").addEventListener("click",function(){
     console.log("check")
     window.location.href="login.html"
@@ -484,7 +455,7 @@ let healthcare_div_arr=[
 function appendhealthcareImg(healthcare_div_arr){
 
     healthcare_div_arr.forEach(function(el,index){
-        let div = document.createElement("maindiv")
+        let div = document.createElement("div")
         
 
 
