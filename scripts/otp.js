@@ -1,8 +1,10 @@
-import navbar from "../components/navbar.js";
-
-document.getElementById("main_nav").innerHTML=navbar()
 
 
+
+let subBtn = document.getElementById('entOtp');
+subBtn.addEventListener('click',function() {
+    verifyOtp();
+})
 
 
 
@@ -11,10 +13,6 @@ let abc = document.querySelector('.num');
 abc.innerText = `+91 ${entNum}`;
 
 
-let subBtn = document.getElementById('entOtp');
-subBtn.addEventListener('click',function() {
-    verifyOtp();
-})
 
 
 const verifyOtp = () => {
