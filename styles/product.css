@@ -1,6 +1,5 @@
-*body{
-  font-family: sans-serif
-}
+
+
 
 #container{
     border:0px solid blue;
@@ -179,9 +178,27 @@ h4{
     /* margin-left: 75px; */
     margin-top: 30px;
 }
+#count {
+    position: absolute;
+    top: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f47779;
+    border: 0.5px solid #fff;
+    border-radius: 8px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+  }
 
 #product_details{
-    /* margin-left: 75px; */
+
+    margin-left: 75px;
+
     margin-top: 30px;
 }
 #recent{
@@ -215,9 +232,11 @@ h4{
 }
 
 #hrLine{
+
     /* margin-left: 75px; */
     /* width:65%; */
     opacity: 0.5;
+
 }
 
 a{
