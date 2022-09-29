@@ -23,6 +23,7 @@ function appenddetails(data){
 
     let title=document.createElement("h2")
     title.innerText=data.name
+   
 
     let mrp=document.createElement("h3")
     mrp.innerText=data.price
@@ -30,3 +31,7 @@ function appenddetails(data){
 
     details.append(title,mrp)
 }
+
+
+
+
