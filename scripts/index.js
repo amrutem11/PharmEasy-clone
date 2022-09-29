@@ -265,7 +265,7 @@ newlaunches_arr.forEach((el,index)=>{
 
  let offeryou=document.getElementById("offers_for_you")
 
- let p_offer = dcoument.createElement("p")
+ let p_offer = document.createElement("p")
  p_offer.innerText=""
 
 

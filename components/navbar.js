@@ -21,7 +21,7 @@ function navbar(){
                     <img id="person_img" src="./images/profile.png" alt="">
                 </div>
                 <div id="text">
-                        <a id="login" href="#login"> <span >Hello,Log in</span></a>
+                        <a id="login" href="login.html"> <span id='acc'>Hello,Log in</span></a>
                 </div> 
             </div>
         
