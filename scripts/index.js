@@ -1,6 +1,6 @@
-import navbar from "../components/navbar.js";
+// import navbar from "../components/navbar.js";
 
-document.getElementById("main_nav").innerHTML=navbar()
+// document.getElementById("main_nav").innerHTML=navbar()
 
 
 
@@ -209,6 +209,7 @@ newlaunches_arr.forEach((el,index)=>{
     div.setAttribute("id","new_launc_container")
     div.addEventListener("click",function(){
         localStorage.setItem("newlaunches",JSON.stringify(newlaunches_arr[index]))
+        window.location.href="product.html"
     })
     
     let image_div=document.createElement("div")
