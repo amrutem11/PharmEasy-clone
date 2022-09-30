@@ -28,6 +28,7 @@ function appenddetails(data){
 
     let title=document.createElement("h2")
     title.innerText=data.name
+   
 
  
 
@@ -59,3 +60,4 @@ btn.addEventListener("click",()=>{
    
    }
 // console.log(items)
+
