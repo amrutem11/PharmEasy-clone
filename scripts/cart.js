@@ -1,16 +1,17 @@
 
+let carts = JSON.parse(localStorage.getItem("cart"))
+console.log("cart:",carts)
 
-let newlaunches_data = JSON.parse(localStorage.getItem("newlaunches"))||[]
+appendimg(carts)
 
-appendimg(newlaunches_data)
+appenddetails(carts)
 
-appenddetails(newlaunches_data)
-
- appendmrp(newlaunches_data)
+ appendmrp(carts)
 
 
 
 function appendimg(data){
+    console.log(data)
 
     let soap=document.getElementById("left")
 
@@ -42,21 +43,18 @@ function appendmrp(data){
     mrps.innerText=data.price
 
  mrp.append(mrps)
-}
 
-let addto=document.getElementById("right")
-
-let btn=document.createElement("button")
-btn.innerText="View Cart";
-
-addto.append(btn)
-btn.addEventListener("click",function(){
-    tocart()
+ let del=document.getElementById("delete")
+del.addEventListener("click",function(){
+    todelete()
 })
-
-let carts = JSON.parse(localStorage.getItem("cart"))||[]
-console.log(carts)
-function tocart(){
-    localStorage.setItem("cart",JSON.stringify(newlaunches_data))
-    window.location.href="cart.html"
 }
+
+
+
+// todelete(){
+   
+//         console.log(index);
+//         arrProductData.splice(index, 1)
+// }
+
