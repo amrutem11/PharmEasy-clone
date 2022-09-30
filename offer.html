@@ -5,19 +5,191 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>offer</title>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link href='https://css.gg/format-justify.css' rel='stylesheet'>
+
+    <style>
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  #main_nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    margin-top: 25px;
+    height: 80px;
+    width: 100%;
+    padding: 0;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-bottom: 7px;
+    width: 100%;
+  }
+  #pin {
+    display: block;
+  }
+  #navbar > img {
+    margin-left: 80px;
+  }
+
+  #search {
+    border: 1px solid grey;
+    align-items: center;
+    width: 450px;
+    font-size: 14px;
+    border-radius: 30px;
+    margin-left: 30px;
+    justify-content: space-around;
+    height: 60px;
+    margin-left: 50px;
+  }
+  #search > img {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+  }
+  #search > input {
+    margin-left: 20px;
+    /* margin-top: 8px; */
+    background: transparent;
+    border: 0;
+    outline: 0;
+    width: 200px;
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 0;
+    /* border: 1px solid green; */
+  }
+  #search > button {
+    width: 130px;
+    height: 50px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    background-color: #108472;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-left: 45px;
+    margin-top: 5px;
+  }
+  #login {
+    text-decoration: none;
+    gap: 5px;
+    color: black;
+    margin-left: 15px;
+  }
+
+  #login_div,
+  #offer_div,
+  #cart_main {
+    display: flex;
+    margin-left: 15px;
+  }
+  #person_img {
+    height: 30px;
+    width: 30px;
+
+    margin-top: 13px;
+    outline: none;
+  }
+  #text {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 17px;
+  }
+  #count {
+    position: absolute;
+    top: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f47779;
+    border: 0.5px solid #fff;
+    border-radius: 8px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  #showmore {
+    width: 10px;
+    height: 10px;
+  }
+  #offer_img {
+    height: 30px;
+    width: 30px;
+    margin-top: 13px;
+    outline: none;
+  }
+  #offer {
+    text-decoration: none;
+    gap: 5px;
+    color: #000;
+  }
+  #offer_txt {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 17px;
+  }
+  #cart_img {
+    height: 30px;
+    width: 30px;
+    margin-top: 13px;
+    outline: none;
+  }
+  #anchor_tags a {
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    margin-top: 8px;
+  }
+  #anchor_tags {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 10px; */
+    gap: 35px;
+    background-color: lightblue;
+
+    font-size: 20px;
+    font-family: sans-serif;
+  }
+  #below_main {
+    width: 100%;
+    height: 44px;
+    background-color: lightblue;
+    position: sticky;
+  }
+ 
+    </style>
+
+
+
+
   <style>
     #PharmEasy_Offers{
       width: 85%;
       height: auto;
       margin: auto;
+      margin-top: 6%;
       border: 0px solid red;
       font-family: sans-serif;
     }
 
     #PharmEasy_Offers>h1{
         color: #4f585E;
+        padding: 5px;
+        font-family: sans-serif;
     }
 
     #PharmEasy_Offers>p{
@@ -27,12 +199,14 @@
 
 
     #offer_div_container{
-      width: 85%;
+      width: 80%;
+      
       height: auto;
       border: 1px solid rgb(255, 255, 255);
       margin: auto;
+      margin-top: 5%;
       display: grid;
-      grid-template-columns: 510px 510px;
+      grid-template-columns: repeat(2,1fr);
       gap:35px 38px;
      
       font-family: sans-serif;
@@ -41,8 +215,10 @@
     } 
 
       #offer_div_container>div{
-        width: 510px;
-        height: 215px;
+        /* width: 510px; */
+        height: 240px;
+
+        text-align: justify;
         border-radius: 5px;
         border: 1px solid rgb(255, 255, 255);
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
@@ -51,11 +227,13 @@
 
       #inner_div1{
         display: flex;
+        /* text-align: justify; */
+      
         
       }
 
       #images_11 img{
-          width: 80px;
+          width: 110px;
           padding: 20px;
       }
 
@@ -80,11 +258,11 @@
       }
 
       #code_div_p{
-        padding: 10px;
+        padding: 30px;
       }
 
       #code_div_btn{
-        padding: 15px;
+        /* padding: 15px; */
         border: 0;
         background-color: none;
       }
@@ -93,18 +271,27 @@
         border: 0;
         background-color: white;
         color: #10847E;
-        font-size: 110%;
+        font-size: 130%;
+        margin-top: 10%;
+        margin-left: 35%;
+        cursor:pointer;
+        
         font-weight: 1000;
       }
 
       #flat_font>h3{
         font-family: sans-serif;
+        font-size: 22px;
         color: #4f585E;
+        padding: 15px;
       }
 
       #flat_font>p{
         font-family: sans-serif;
         color: #4f585E;
+        font-size: 20px;  
+        padding: 10px;
+        margin-top: 10px;
         
       }
 
@@ -189,12 +376,177 @@
             font-family: sans-serif;
         }
 </style>
+
+
+<style>
+
+  
+
+#footer{
+    width: 100%;
+    margin: auto;
+    background-color: #c8d1e2;
+}
+
+
+#bot3 {
+    margin: 0;
+    padding: 5% 5%;
+  }
+  #b3first {
+    display: flex;
+  }
+  #feat {
+    display: flex;
+    flex: 3;
+  }
+  #feat > div {
+    flex-basis: 100%;
+  }
+  #b3first p {
+    color: rgb(79, 88, 94);
+    line-height: 1.1;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  span > img {
+    height: 2rem;
+    margin: 0.5rem;
+  }
+  #b3sec {
+    display: flex;
+    flex-basis: auto;
+  }
+  #pay {
+    flex: 3;
+  }
+  #pay1{
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #30363c;
+    font-family: sans-serif;
+
+  }
+  #copy {
+    padding-top: 4rem;
+  
+    text-align: left;
+    flex: 1;
+  }
+  #social {
+    margin-left: 10px;
+    flex: 1;
+  }
+  #social>h4{
+    margin-left: 15px;
+  }
+  #social > img {
+    width: 40px;
+    padding: 5px;
+    border-radius: 22px;
+    margin: 0.75rem;
+  }
+  #social > img:hover {
+    transform: scale(1.2);
+  }
+
+  #feat>div> p {
+    padding-bottom: 7px;
+    margin-top: 20px;
+  }
+  #feat h4 {
+    padding-top: 10px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #30363c;
+    font-family: sans-serif;
+  }
+  #feat p:hover {
+    color: rgb(16, 132, 126);
+  }
+  
+  #social > img:hover {
+    transform: scale(1.2);
+  }
+  #pay > span > img {
+    height: 2rem;
+  }
+
+
+</style>
 </head>
 <body>
+
+  <div id="main_nav">
+
+    
+    <div id="navbar">
+      <img id="logo" src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=360x0" alt="">
+      <hr>
+      <div id="pin">
+          <div>
+              <p style="color: #4f585e;;"><img src="https://assets.pharmeasy.in/apothecary/images/ic_express%20delivery.svg?dim=32x0" alt="">Express delivery to</p>
+          </div>
+      
+          <div>
+              <h3>Select pincode <img id="showmore" src="./images/show-more.png" alt=""></h3>
+          </div>
+      </div>
+      <div id="search">
+          <img id="searchlogo" src="./images/search.png" alt="">
+          <input id="searchinput" type="text" placeholder="Search for ...">
+          <button  id="search_btn" >Search</button>
+      </div>
+      <div style="margin-left: 30px ;" id="login_div">
+          <div>
+              <img id="person_img" src="./images/profile.png" alt="">
+          </div>
+          <div id="text">
+                  <a id="login" href="login.html"> <span >Hello,Log in</span></a>
+          </div> 
+      </div>
+  
+      <div id="offer_div">
+          <div>
+              <img id="offer_img" src="./images/offer.png" alt="">
+          </div>
+          <div id="offer_txt">
+              <a id="offer" href="#offer"><span>Offers</span></a>
+          </div>
+  
+      </div>
+  
+      <div id="cart_main">
+          <div id="cart_div">
+          
+              <img id="cart_img" src="./images/carts.png" alt="">
+              
+          </div>
+          <div id="count">0</div>
+          <div id="offer_txt">
+              <a id="offer" href="#offer"><span>Cart</span></a>
+          </div>
+      </div>
+          </div>
+    
+      <div id="anchor_tags">
+          <a href="./medicine.html">Medicine</a>
+          <a href="./healthcare.html">Healthcare</a>
+          <a href="./labtest.html">Lab Test</a>
+          <a href="">Offers</a>
+          <a href="">PLUS</a>
+          <a href="">Health Blogs</a>
+          
+     
+     </div>
+    </div>
   
 
 
-  <div id="PharmEasy_Offers" data-aos="zoom-in-down">
+  <div id="PharmEasy_Offers">
     <h1>
       PharmEasy Offers & Coupon Codes
     </h1>
@@ -204,20 +556,20 @@
     <!-- <h5>Hurry! Avail these exclusive PharmEasy offers now.</h5> -->
   </div>
 
-  <div id="offer_div_container" data-aos="zoom-out-up">
+  <div id="offer_div_container">
     
 
 
 
-    <div data-aos="zoom-out-up">
-      <div id="inner_div1" data-aos="zoom-out-up">
-        <div id="images_11" data-aos="zoom-out-up"><img src="https://cms-contents.pharmeasy.in/offer/028f38c99b9-PELOGO.jpg" alt="">
+    <div>
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/028f38c99b9-PELOGO.jpg" alt="">
           <p id="Expiring_in_7">Expiring in 7 day</p>
         </div>
-        <div id="flat_font data-aos="zoom-out-up"">
-          <h3 data-aos="zoom-out-up">Flat 25% off on first 3 medicine order.
+        <div id="flat_font">
+          <h3>Flat 25% off on first 3 medicine order.
           </h3>
-          <p  id="falt_font_p">Flat 25% off on first 3 medicine order.</p>
+          <p id="falt_font_p">Flat 25% off on first 3 medicine order.</p>
         </div>
       </div>
 
@@ -234,7 +586,7 @@
 
     </div>
 
-    <div data-aos="zoom-out-up">
+    <div>
       <div id="inner_div1">
         <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/028f38c99b9-PELOGO.jpg" alt="">
           <p id="Expiring_in_7">Expiring in 7 day</p>
@@ -259,7 +611,7 @@
 
     </div>
 
-    <div data-aos="zoom-out-up">
+    <div>
       <div id="inner_div1">
         <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/41232b873a8-PELOGO.jpg" alt="">
           <p id="Expiring_in_7">Expiring in 7 day</p>
@@ -282,7 +634,7 @@
       </div>
 
 
-    </div data-aos="zoom-out-up">
+    </div>
 
 
      <div>
@@ -309,7 +661,7 @@
       </div>
 
 
-    </div data-aos="zoom-out-up">
+    </div>
 
 
     <div>
@@ -337,7 +689,7 @@
 
     </div>
 
-    <div data-aos="zoom-out-up">
+    <div>
       <div id="inner_div1">
         <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/00aa49181c6-3_400x400.png" alt="">
           <p id="Expiring_in_7">Expiring in 9 day</p>
@@ -364,7 +716,7 @@
     </div>
 
 
-    <div data-aos="zoom-out-up">
+    <div>
       <div id="inner_div1">
         <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/beff77d2d65-Diagnostics-11-min.png" alt="">
           <p id="Expiring_in_7">Expiring in 9 day</p>
@@ -392,7 +744,7 @@
       
 
 
-      <div data-aos="zoom-out-up">
+      <div>
         <div id="inner_div1">
           <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/de97a6fbe28-PE_LOGO.jpg" alt="">
             <p id="Expiring_in_7">Expiring in 9 day</p>
@@ -422,7 +774,7 @@
     
 
 
-    <div data-aos="zoom-out-up">
+    <div>
       <div id="inner_div1">
         <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/de97a6fbe28-PE_LOGO.jpg" alt="">
           <p id="Expiring_in_7">Expiring in 9 day</p>
@@ -449,7 +801,7 @@
     </div>
 
 
-    <div data-aos="zoom-out-up">
+    <div>
       <div id="inner_div1">
         <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/6b979e67782-Diagnostics-02-min.png" alt="">
           <p id="Expiring_in_7">Expiring in 9 day</p>
@@ -475,7 +827,7 @@
 
     </div>
 
-    <div data-aos="zoom-out-up">
+    <div>
       <div id="inner_div1">
         <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/f99f81a36bd-1X1_Log_PE.png" alt="">
           <p id="Expiring_in_7">Expiring in 9 day</p>
@@ -502,7 +854,7 @@
     </div>
 
 
-    <div data-aos="zoom-out-up">
+    <div>
       <div id="inner_div1">
         <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/a39f3a0b277-Diagnostics-01-min.png" alt="">
           <p id="Expiring_in_7">Expiring in 9 day</p>
@@ -528,7 +880,7 @@
 
     </div>
 
-    <div data-aos="zoom-out-up">
+    <div>
       <div id="inner_div1">
         <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/5db436ee3cd-1_400x400.png" alt="">
           <p id="Expiring_in_7">Expiring in 9 day</p>
@@ -555,7 +907,7 @@
 
     </div>
 
-    <div data-aos="zoom-out-up">
+    <div>
       <div id="inner_div1">
         <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/f99f81a36bd-1X1_Log_PE.png" alt="">
           <p id="Expiring_in_7">Expiring in 9 day</p>
@@ -578,11 +930,11 @@
         </div>
 
       </div>
-      
+
 
     </div>
 
-    <div data-aos="zoom-out-up">
+    <div>
       <div id="inner_div1">
         <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/f99f81a36bd-1X1_Log_PE.png" alt="">
           <p id="Expiring_in_7">Expiring in 9 day</p>
@@ -615,11 +967,11 @@
   </div>
 
   
-<section data-aos="zoom-out-up">
+<section>
     <div class="accordion">
         
 
-        <div class="contentBx" data-aos="zoom-out-up">
+        <div class="contentBx">
             <div class="label"><B>What is the Latest offers & coupen code applicable on PharmEasy?</B> </div>
             <div class="content">
                 <p>1: Flat 25% off on first 3 medicine orders.</p>
@@ -752,6 +1104,133 @@ Our Phlebotomist will reach your home on time or before, otherwise you will get 
 
 
 
+<div id="footer">
+  <div id="bot3">
+    <div id="b3first">
+      <div id="feat">
+        <div>
+          <h4>Company</h4>
+          <p>Careers</p>
+          <p>Blogs</p>
+          <p>Partner with PharmEasy</p>
+          <h4>Our Services</h4>
+          <p>Order Medicine</p>
+          <p>Healthcare Products</p>
+          <p>Diagnostic Tests</p>
+        </div>
+        <div>
+          <h4>Featured Categories</h4>
+          <p>Covid Essentials</p>
+          <p>Devices</p>
+          <p>Nutriyion and Fitness Suppliments</p>
+          <p>Personal Care</p>
+          <p>Ayurvedic Care</p>
+          <p>Baby and Mom care</p>
+          <p>Skin Care</p>
+          <p>Diabetic Care</p>
+          <p>Sexual Wellness</p>
+          <p>Short term Ailments</p>
+          <p>Lifestyle Ailments</p>
+          <p>Home Care</p>
+          <p>Women Care</p>
+          <p>Health Food and Drinks</p>
+          <p>Ortho Care</p>
+        </div>
+        <div>
+          <h4>Need Help</h4>
+          <p>Browse All Medicines</p>
+          <p>Browse All Molecules</p>
+          <p>FAQs</p>
+          <h4>Policy Info</h4>
+          <p>Editorial Policy</p>
+          <p>Privacy Policy</p>
+          <p>Vulnerability Disclosure Policy</p>
+          <p>Terms and condition</p>
+          <p>Customer Support Policy</p>
+          <p>Return Policy</p>
+        </div>
+      </div>
+      <div id="social">
+        <h4>FOLLOW US</h4>
+        <img
+          src="https://assets.pharmeasy.in/apothecary/images/Instagram.svg?dim=32x0"
+          alt="insta"
+        /><img
+          src="https://assets.pharmeasy.in/apothecary/images/facebook.svg?dim=32x0"
+          alt="fb"
+        /><img
+          src="https://assets.pharmeasy.in/apothecary/images/Youtube.svg?dim=32x0"
+          alt="YT"
+        /><img
+          src="https://assets.pharmeasy.in/apothecary/images/Twitter.svg?dim=32x0"
+          alt="twit"
+        />
+      
+      </div>
+    </div>
+    <div id="b3sec">
+      <div id="pay">
+        <h4 id="pay1">Our Payment Partners</h4>
+        <span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg"
+            alt=""
+        /></span>
+        <span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg"
+            alt=""
+        /></span>
+        <span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg"
+            alt=""
+        /></span>
+        <span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg"
+            alt="" /></span
+        ><span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg"
+            alt="" /></span
+        ><span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg"
+            alt="" /></span
+        ><span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg"
+            alt="" /></span
+        ><span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/0aca2077.svg"
+            alt="" /></span
+        ><span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg"
+            alt="" /></span
+        ><span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/d058b00d.svg"
+            alt="" /></span
+        ><span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg"
+            alt="" /></span
+        ><span
+          ><img
+            src="https://assets.pharmeasy.in/web-assets/dist/6e09c713.svg"
+            alt=""
+        /></span>
+      </div>
+      <div id="copy">© 2021 PharmEasy. All Rights Reserved</div>
+    </div>
+  </div>
+</div>
+
+
+
 </body>
 
 
@@ -771,12 +1250,4 @@ Our Phlebotomist will reach your home on time or before, otherwise you will get 
         this.classList.toggle('active');
     })
   }
-</script>
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init({
-    offset:10,
-    duration:2000,    
-  });
 </script>
