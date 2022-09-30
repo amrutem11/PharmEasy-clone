@@ -45,6 +45,24 @@ function appendmrp(data){
  mrp.append(mrps)
 }
 
+
+let addto=document.getElementById("right")
+
+let btn=document.createElement("button")
+btn.innerText="View Cart";
+
+addto.append(btn)
+btn.addEventListener("click",function(){
+    tocart()
+})
+
+let carts = JSON.parse(localStorage.getItem("cart"))||[]
+console.log(carts)
+function tocart(){
+    localStorage.setItem("cart",JSON.stringify(newlaunches_data))
+    window.location.href="cart.html"
+}
+
 btn.addEventListener("click",()=>{
     
     cart(newlaunches_data)
