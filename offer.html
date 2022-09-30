@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>offer</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href='https://css.gg/format-justify.css' rel='stylesheet'>
+  <style>
+    #PharmEasy_Offers{
+      width: 85%;
+      height: auto;
+      margin: auto;
+      border: 0px solid red;
+      font-family: sans-serif;
+    }
+
+    #PharmEasy_Offers>h1{
+        color: #4f585E;
+    }
+
+    #PharmEasy_Offers>p{
+        color: #4b4b4b;
+        line-height: 25px;
+    }
+
+
+    #offer_div_container{
+      width: 85%;
+      height: auto;
+      border: 1px solid rgb(255, 255, 255);
+      margin: auto;
+      display: grid;
+      grid-template-columns: 510px 510px;
+      gap:35px 38px;
+     
+      font-family: sans-serif;
+      color: #4f585E;
+
+    } 
+
+      #offer_div_container>div{
+        width: 510px;
+        height: 215px;
+        border-radius: 5px;
+        border: 1px solid rgb(255, 255, 255);
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+      }
+
+      #inner_div1{
+        display: flex;
+        
+      }
+
+      #images_11 img{
+          width: 80px;
+          padding: 20px;
+      }
+
+      #Expiring_in_7{
+          margin-top: -35px;
+          color: brown;
+          width: 80px;
+          padding: 20px;
+      }
+
+      #code_div{
+        border: 1px solid rgb(255, 255, 255);
+        width: auto;
+        height: 60px;
+        margin-top: -20px;
+        display: grid;
+        grid-template-columns:100px 200px;
+        gap: 250px;
+        /* */
+
+        
+      }
+
+      #code_div_p{
+        padding: 10px;
+      }
+
+      #code_div_btn{
+        padding: 15px;
+        border: 0;
+        background-color: none;
+      }
+      #code_div_btn>button{
+        /* padding: 20px; */
+        border: 0;
+        background-color: white;
+        color: #10847E;
+        font-size: 110%;
+        font-weight: 1000;
+      }
+
+      #flat_font>h3{
+        font-family: sans-serif;
+        color: #4f585E;
+      }
+
+      #flat_font>p{
+        font-family: sans-serif;
+        color: #4f585E;
+        
+      }
+
+
+
+  </style>
+
+
+<style>
+
+
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: sans-serif;
+       
+    }
+
+    .accordion{
+        width: 80%;
+        font-family: sans-serif;
+       
+    }
+
+    .accordion .contentBx{
+        position: relative;
+        margin: 10px 20px;
+        font-family: sans-serif;
+
+    }
+
+    .accordion .contentBx .label{
+        position: relative;
+        padding: 20px;
+        background:#ffffff ;
+        color: #4f585E;
+        font-family: sans-serif;
+        cursor: pointer;
+
+    }
+
+    .accordion .contentBx .label::before{
+        content: '+';
+        position:absolute;
+        font-family: sans-serif;
+        top:50%;
+        right:20px;
+        transform: translateY(-50%);
+        font-size: 1.5em;
+        
+    
+}
+
+
+        .accordion .contentBx .content{
+            position: relative;
+            font-family: sans-serif;
+            background:#ffff;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            overflow-y: auto;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+        }
+
+        .accordion .contentBx.active .content{
+            height: auto;
+            padding: 10px;
+            line-height: 25px;
+            font-family: sans-serif;
+            color: #4f585E;
+            box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+        }
+
+        .accordion .contentBx.active .label::before{
+            content: '-';
+            font-family: sans-serif;
+        }
+</style>
+</head>
+<body>
+  
+
+
+  <div id="PharmEasy_Offers" data-aos="zoom-in-down">
+    <h1>
+      PharmEasy Offers & Coupon Codes
+    </h1>
+    <p>PharmEasy is one of India’s leading online healthcare platforms that allows you to make great savings on your medicines and healthcare needs every day.From finding the prescribed medicine you need to the wellness product that is best suitable for you, PharmEasy is your one-stop destination for all your healthcare needs. Affordable prices offered by our partner retail pharmacies allow you to focus on your and your family’s health while we take care of your budget.</p>
+    <!-- <p>We have got the best offers just for you. Watch out this space for the best PharmEasy offers on a range of healthcare products. Find new PharmEasy coupons and many such exciting offer codes updated every day. Simply use the PharmEasy coupon code to avail the best deals and offers. PharmEasy offers amazing payment and cashback deals too for new and existing users. Just apply the PharmEasy promo code at check-out and make the most of these offers.</p> -->
+    <!-- <h5>Download the PharmEasy app today to buy medicines online with great savings.</h5> -->
+    <!-- <h5>Hurry! Avail these exclusive PharmEasy offers now.</h5> -->
+  </div>
+
+  <div id="offer_div_container" data-aos="zoom-out-up">
+    
+
+
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1" data-aos="zoom-out-up">
+        <div id="images_11" data-aos="zoom-out-up"><img src="https://cms-contents.pharmeasy.in/offer/028f38c99b9-PELOGO.jpg" alt="">
+          <p id="Expiring_in_7">Expiring in 7 day</p>
+        </div>
+        <div id="flat_font data-aos="zoom-out-up"">
+          <h3 data-aos="zoom-out-up">Flat 25% off on first 3 medicine order.
+          </h3>
+          <p  id="falt_font_p">Flat 25% off on first 3 medicine order.</p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>25TAKE</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/028f38c99b9-PELOGO.jpg" alt="">
+          <p id="Expiring_in_7">Expiring in 7 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>Flat 27% off + up to Rs.5000 surprise cashback
+          </h3>
+          <p id="falt_font_p">Coupen applicable on order above Rs.1299</p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>POCK27</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/41232b873a8-PELOGO.jpg" alt="">
+          <p id="Expiring_in_7">Expiring in 7 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>Additional 15% cashback on 1st medicine
+          </h3>
+          <p id="falt_font_p">Coupon applicable on orders above Rs.499. Hurry! order now.</p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>CASH15</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div data-aos="zoom-out-up">
+
+
+     <div>
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/ff60cd9f220-11.jpg" alt="">
+          <p id="Expiring_in_7">Expiring in 3 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>Get 15% + Flat Rs. 200 instant discount on CITI Bank Cards
+          </h3>
+          <p id="falt_font_p">Instant discount will be applied on the payment page on adding the correct CITI Bank Card details.
+            </p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>CASH15</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div data-aos="zoom-out-up">
+
+
+    <div>
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/00aa49181c6-3_400x400.png" alt="">
+          <p id="Expiring_in_7">Expiring in 9 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>Get FLAT Rs.450 OFF on orders above Rs 1499.
+          </h3>
+          <p id="falt_font_p">Get FLAT Rs.450 OFF on orders above Rs 1499.</p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>LABTEST450</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/00aa49181c6-3_400x400.png" alt="">
+          <p id="Expiring_in_7">Expiring in 9 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>Get Flat Rs.350 OFF + Free Doctor Consultation
+          </h3>
+          <p id="falt_font_p">On orders above Rs.1499
+          </p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>DOC350</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/beff77d2d65-Diagnostics-11-min.png" alt="">
+          <p id="Expiring_in_7">Expiring in 9 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>Get FLAT Rs.1000 OFF on booking 2 Comprehensive Full Body checkup with Vitamin D and B12 Packages.
+          </h3>
+          <p id="falt_font_p">Get FLAT Rs.1000 OFF on booking 2 Comprehensive Full Body checkup with Vitamin D and B12 Packages.
+          </p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>GRAND1000</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+    </div>
+
+      
+
+
+      <div data-aos="zoom-out-up">
+        <div id="inner_div1">
+          <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/de97a6fbe28-PE_LOGO.jpg" alt="">
+            <p id="Expiring_in_7">Expiring in 9 day</p>
+          </div>
+          <div id="flat_font">
+            <h3>Buy 3 Health Checkups worth Rs.1499 each and Pay for only 2.
+            </h3>
+            <p id="falt_font_p">Buy 3 Health Checkups worth Rs.1499 each and Pay for only 2.
+            </p>
+          </div>
+        </div>
+  
+        <div id="code_div">
+          <div id="code_div_p">
+            <p>Code:<B>MEGASAVER</B></p>
+          </div>
+          <div id="code_div_btn">
+            <button onclick="copycode()">Copy Code</button>
+          </div>
+  
+        </div>
+  
+  
+      </div>
+
+
+    
+
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/de97a6fbe28-PE_LOGO.jpg" alt="">
+          <p id="Expiring_in_7">Expiring in 9 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>Get Flat Rs.198 OFF on booking Hba1c Pack of 3.
+          </h3>
+          <p id="falt_font_p">Get Flat Rs.198 OFF on booking Hba1c Pack of 3.
+          </p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>HBCPACK</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/6b979e67782-Diagnostics-02-min.png" alt="">
+          <p id="Expiring_in_7">Expiring in 9 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>
+            Get FLAT Rs.300 cashback on PharmEasy Labtests booked above Rs.999
+          </h3>
+          <p id="falt_font_p">Get FLAT Rs.300 cashback on PharmEasy Labtests booked above Rs.999.</p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>FIT300</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/f99f81a36bd-1X1_Log_PE.png" alt="">
+          <p id="Expiring_in_7">Expiring in 9 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>Use code GETSAVE to avail the following offers:
+          </h3>
+          <p id="falt_font_p">Buy 2 tests & get FLAT 15% Cashback
+          </p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>GETSAVE</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/a39f3a0b277-Diagnostics-01-min.png" alt="">
+          <p id="Expiring_in_7">Expiring in 9 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>Get FLAT Rs.200 cashback on PharmEasy Labtests booked above Rs.699.
+          </h3>
+          <p id="falt_font_p">Get FLAT Rs.200 cashback on PharmEasy Labtests booked above Rs.699.
+          </p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>FIT200</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/5db436ee3cd-1_400x400.png" alt="">
+          <p id="Expiring_in_7">Expiring in 9 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>
+            Get Flat Rs.50 Cashback on orders above Rs.300
+          </h3>
+          <p id="falt_font_p">Get Flat Rs.50 Cashback on orders above Rs.300.
+          </p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>CSH50</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/f99f81a36bd-1X1_Log_PE.png" alt="">
+          <p id="Expiring_in_7">Expiring in 9 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>
+            Get a health checkup and FREE doctor consultation. Use code DOCCONSULT.
+          </h3>
+          <p id="falt_font_p">Get a health checkup and FREE doctor consultation. Use code DOCCONSULT
+          </p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>DOCCONSULT</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+      
+
+    </div>
+
+    <div data-aos="zoom-out-up">
+      <div id="inner_div1">
+        <div id="images_11"><img src="https://cms-contents.pharmeasy.in/offer/f99f81a36bd-1X1_Log_PE.png" alt="">
+          <p id="Expiring_in_7">Expiring in 9 day</p>
+        </div>
+        <div id="flat_font">
+          <h3>
+            Our Phlebotomist will reach your home on time or before, otherwise you will get 100% cashback on your cart value.
+          </h3>
+          <p id="falt_font_p">Our Phlebotomist will reach your home on time or before, otherwise you will get 100% cashback on your cart value.
+          </p>
+        </div>
+      </div>
+
+      <div id="code_div">
+        <div id="code_div_p">
+          <p>Code:<B>FREE</B></p>
+        </div>
+        <div id="code_div_btn">
+          <button onclick="copycode()">Copy Code</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+    
+  </div>
+
+  
+<section data-aos="zoom-out-up">
+    <div class="accordion">
+        
+
+        <div class="contentBx" data-aos="zoom-out-up">
+            <div class="label"><B>What is the Latest offers & coupen code applicable on PharmEasy?</B> </div>
+            <div class="content">
+                <p>1: Flat 25% off on first 3 medicine orders.</p>
+                <p>2: Flat 27% off + up to Rs.5000 surprise cashback</p>
+                <p>3: Get 15% + Flat Rs. 200 instant discount on CITI Bank Cards</p>
+                <p>4: Get FLAT Rs.450 OFF on orders above Rs 1499.</p>
+                <p>5: Get Flat Rs.350 OFF + Free Doctor Consultation</p>
+                
+                <p>6: Get FLAT Rs.1000 OFF on booking 2 Comprehensive Full Body checkup with Vitamin D and B12 Packages.</p>
+
+                <p>7: Buy 3 Health Checkups worth Rs.1499 each and Pay for only 2.</p>
+
+                <p>8: Get Flat Rs.198 OFF on booking Hba1c Pack of 3.</p>
+
+
+
+                <p>9: Get FLAT Rs.300 cashback on PharmEasy Labtests booked above Rs.999</p>
+
+                <p>10: Use code GETSAVE to avail the following offers:</p>
+
+                <p>11: Get FLAT Rs.200 cashback on PharmEasy Labtests booked above Rs.699.</p>
+                <p>12: Get Flat Rs.50 Cashback on orders above Rs.300.</p>
+                <p>13: Get a health checkup and FREE doctor consultation. Use code DOCCONSULT.</p>
+
+                <p>14 :Our Phlebotomist will reach your home on time or before, otherwise you will get 100% cashback on your cart value</p>
+            </div>
+        </div>
+
+        <div class="contentBx">
+          <div class="label"><B>How to get update about PharmEasy offer and discount</B></div>
+          <div class="content">
+              <p>Visit the Offers section on the PharmEasy website to explore the latest offers and discounts. You can also download the PharmEasy app from Google Play or Apple App Store to receive notifications on offers and discounts.
+              </p>
+          </div>
+      </div>
+
+        <div class="contentBx">
+            <div class="label"><b>How do I used a coupen</b></div>
+            <div class="content">
+                <p>
+                    Flat 25% off on first 3 medicine orders.
+Flat 27% off + up to Rs.5000 surprise cashback
+Additional 15% cashback on 1st medicine
+Get 15% + Flat Rs. 200 instant discount on CITI Bank Cards
+Get FLAT Rs.450 OFF on orders above Rs 1499.
+Get Flat Rs.350 OFF + Free Doctor Consultation
+Get FLAT Rs.1000 OFF on booking 2 Comprehensive Full Body checkup with Vitamin D and B12 Packages.
+Buy 3 Health Checkups worth Rs.1499 each and Pay for only 2.
+Get Flat Rs.198 OFF on booking Hba1c Pack of 3.
+Get FLAT Rs.300 cashback on PharmEasy Labtests booked above Rs.999
+Use code GETSAVE to avail the following offers:
+Get FLAT Rs.200 cashback on PharmEasy Labtests booked above Rs.699.
+Get Flat Rs.50 Cashback on orders above Rs.300.
+Get a health checkup and FREE doctor consultation. Use code DOCCONSULT.
+Our Phlebotomist will reach your home on time or before, otherwise you will get 100% cashback on your cart value
+                </p>
+            </div>
+        </div>
+
+        <div class="contentBx">
+            <div class="label"><b>Do I get a special discount when order for the 1st time</b></div>
+            <div class="content">
+                <p>
+                    Flat 25% off on first 3 medicine orders.
+Flat 27% off + up to Rs.5000 surprise cashback
+Additional 15% cashback on 1st medicine
+Get 15% + Flat Rs. 200 instant discount on CITI Bank Cards
+Get FLAT Rs.450 OFF on orders above Rs 1499.
+Get Flat Rs.350 OFF + Free Doctor Consultation
+Get FLAT Rs.1000 OFF on booking 2 Comprehensive Full Body checkup with Vitamin D and B12 Packages.
+Buy 3 Health Checkups worth Rs.1499 each and Pay for only 2.
+Get Flat Rs.198 OFF on booking Hba1c Pack of 3.
+Get FLAT Rs.300 cashback on PharmEasy Labtests booked above Rs.999
+Use code GETSAVE to avail the following offers:
+Get FLAT Rs.200 cashback on PharmEasy Labtests booked above Rs.699.
+Get Flat Rs.50 Cashback on orders above Rs.300.
+Get a health checkup and FREE doctor consultation. Use code DOCCONSULT.
+Our Phlebotomist will reach your home on time or before, otherwise you will get 100% cashback on your cart value
+                </p>
+            </div>
+        </div>
+
+        <div class="contentBx">
+            <div class="label"><b>Can I apply more than one coupen at the same time</b></div>
+            <div class="content">
+                <p>
+                    Flat 25% off on first 3 medicine orders.
+Flat 27% off + up to Rs.5000 surprise cashback
+Additional 15% cashback on 1st medicine
+Get 15% + Flat Rs. 200 instant discount on CITI Bank Cards
+Get FLAT Rs.450 OFF on orders above Rs 1499.
+Get Flat Rs.350 OFF + Free Doctor Consultation
+Get FLAT Rs.1000 OFF on booking 2 Comprehensive Full Body checkup with Vitamin D and B12 Packages.
+Buy 3 Health Checkups worth Rs.1499 each and Pay for only 2.
+Get Flat Rs.198 OFF on booking Hba1c Pack of 3.
+Get FLAT Rs.300 cashback on PharmEasy Labtests booked above Rs.999
+Use code GETSAVE to avail the following offers:
+Get FLAT Rs.200 cashback on PharmEasy Labtests booked above Rs.699.
+Get Flat Rs.50 Cashback on orders above Rs.300.
+Get a health checkup and FREE doctor consultation. Use code DOCCONSULT.
+Our Phlebotomist will reach your home on time or before, otherwise you will get 100% cashback on your cart value
+                </p>
+            </div>
+        </div>
+
+        <div class="contentBx">
+            <div class="label"><b>How can I cancel a coupen code</b></div>
+            <div class="content">
+                <p>
+                    Flat 25% off on first 3 medicine orders.
+Flat 27% off + up to Rs.5000 surprise cashback
+Additional 15% cashback on 1st medicine
+Get 15% + Flat Rs. 200 instant discount on CITI Bank Cards
+Get FLAT Rs.450 OFF on orders above Rs 1499.
+Get Flat Rs.350 OFF + Free Doctor Consultation
+Get FLAT Rs.1000 OFF on booking 2 Comprehensive Full Body checkup with Vitamin D and B12 Packages.
+Buy 3 Health Checkups worth Rs.1499 each and Pay for only 2.
+Get Flat Rs.198 OFF on booking Hba1c Pack of 3.
+Get FLAT Rs.300 cashback on PharmEasy Labtests booked above Rs.999
+Use code GETSAVE to avail the following offers:
+Get FLAT Rs.200 cashback on PharmEasy Labtests booked above Rs.699.
+Get Flat Rs.50 Cashback on orders above Rs.300.
+Get a health checkup and FREE doctor consultation. Use code DOCCONSULT.
+Our Phlebotomist will reach your home on time or before, otherwise you will get 100% cashback on your cart value
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+
+
+</html>
+
+<script>
+
+  function copycode(){
+    alert("copy code successfully") ;
+  }
+
+
+  const accordion=document.getElementsByClassName('contentBx');
+
+  for(i=0;i<accordion.length;i++){
+    accordion[i].addEventListener('click',function(){
+        this.classList.toggle('active');
+    })
+  }
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:10,
+    duration:2000,    
+  });
+</script>

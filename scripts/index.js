@@ -461,9 +461,13 @@ function appendhealthcareImg(healthcare_div_arr){
 
 
 
+
         let image=document.createElement("img")
         image.src=el.img
         image.setAttribute("id","healthcareimg")
+
+ let p_offer = document.createElement("p")
+ p_offer.innerText=""
 
 
     

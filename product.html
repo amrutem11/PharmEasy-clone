@@ -8,159 +8,14 @@
     <title>product page</title>
 <link rel="stylesheet" href="./styles/navbar.css">
      <link rel="stylesheet" href="./styles/product.css"> 
+     <!-- <link rel="stylesheet" href="karn css/footer.css"> -->
     <!-- <script src="https://kit.fontawesome.com/17cf5fabe0.js" crossorigin="anonymous"></script> -->
 </head>
-<style>
-    * {
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
-  }
-  #main_nav {
-    position: sticky;
-    top: 0;
-    background-color: white;
-    margin-top: 25px;
-    height: 80px;
-    width: 100%;
-    padding: 0;
-  }
-  #navbar {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    font-size: 20px;
-    font-family: sans-serif;
-    margin-bottom: 7px;
-    width: 100%;
-  }
-  #pin {
-    display: block;
-  }
-  #navbar > img {
-    margin-left: 80px;
-  }
 
-  #search {
-    border: 1px solid grey;
-    align-items: center;
-    width: 450px;
-    font-size: 14px;
-    border-radius: 30px;
-    margin-left: 30px;
-    justify-content: space-around;
-    height: 60px;
-    margin-left: 50px;
-  }
-  #search > img {
-    margin-left: 20px;
-    margin-top: 10px;
-    width: 25px;
-    height: 25px;
-  }
-  #search > input {
-    margin-left: 20px;
-    /* margin-top: 8px; */
-    background: transparent;
-    border: 0;
-    outline: 0;
-    width: 200px;
-    margin-top: 0;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 0;
-    /* border: 1px solid green; */
-  }
-  #search > button {
-    width: 130px;
-    height: 50px;
-    margin-bottom: 5px;
-    border-radius: 30px;
-    background-color: #108472;
-    color: white;
-    font-size: 20px;
-    border: none;
-    margin-left: 45px;
-    margin-top: 5px;
-  }
-  #login {
-    text-decoration: none;
-    gap: 5px;
-    color: black;
-    margin-left: 15px;
-  }
 
-  #login_div,
-  #offer_div,
-  #cart_main {
-    display: flex;
-    margin-left: 15px;
-  }
-  #person_img {
-    height: 30px;
-    width: 30px;
-
-    margin-top: 13px;
-    outline: none;
-  }
-  #text {
-    font-size: 20px;
-    margin-left: 10px;
-    margin-top: 17px;
-  }
-
-  #showmore {
-    width: 10px;
-    height: 10px;
-  }
-  #offer_img {
-    height: 30px;
-    width: 30px;
-    margin-top: 13px;
-    outline: none;
-  }
-  #offer {
-    text-decoration: none;
-    gap: 5px;
-    color: #000;
-  }
-  #offer_txt {
-    font-size: 20px;
-    margin-left: 10px;
-    margin-top: 17px;
-  }
-  #cart_img {
-    height: 30px;
-    width: 30px;
-    margin-top: 13px;
-    outline: none;
-  }
-  #anchor_tags a {
-    text-decoration: none;
-    color: #000;
-    text-align: center;
-    margin-top: 8px;
-  }
-  #anchor_tags {
-    display: flex;
-    justify-content: center;
-    /* margin-top: 10px; */
-    gap: 35px;
-    background-color: lightblue;
-
-    font-size: 20px;
-    font-family: sans-serif;
-  }
-  #below_main {
-    width: 100%;
-    height: 44px;
-    background-color: lightblue;
-    position: sticky;
-  }
- 
-</style>
 
 <body>
+    
    
     <div id="main_nav">
 
@@ -227,14 +82,36 @@
            </div>
               </div>
 
-     <div id="parent">
+        <div id="contain">
+
+     <div id="paren">
         <div id="left"></div>
-        <div id="middle"></div>
-        <div id="right"></div>
+        
+           
+        
+        <div id="middle">
+            <div id="name"></div>
+            <a href="">visit pharamacy store</a>
+            <div><img src="images/star.png" alt=""></div>
+            <div id="mrp"></div>
+
+
+            <button id="tocart">Add to Cart</button>
+
+            <!-- <hr> -->
+            
+           <h2 id="h">Select Available Variant</h2> 
+           <h3 id="he">Pack size</h3>
+           <div id="btn">
+            <button>150G</button>
+            <button>250G</button>
+            <button>225G</button>
+           </div>
 
     </div>  
+</div>
 
-     <div id="prod">
+     <!-- <div id="prod">
         <div>
             <div id="im"> <img
                     src="https://cdn01.pharmeasy.in/dam/products_otc/Q22756/tedibar-baby-soap-box-of-75-g-x-3-2-1641790640.jpg"
@@ -246,54 +123,12 @@
                 <button>Add</button>
             </div>
 
-        </div>
-        <div>
-            <div id="ima"> <img
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/V88624/mamaearth-baby-soap-pack-of-4-box-of-300-g-2-1641788587.jpg"
-                    alt=""></div>
-            <div id="details">
-                <h2>Tedibar Baby Soap Box Of 75 G X 3</h2>
-                <p>225g bar in box</p>
-                <h2>Rs.385</h2>
-                <button>Add</button>
-            </div>
-        </div>
-        <div>
-            <div id="ima"> <img
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/I41140/himalaya-extra-moisturizing-buy-3-get-1-free-baby-soap-box-of-75-g-2-1654251217.jpg"
-                    alt=""></div>
-            <div id="details">
-                <h2>Tedibar Baby Soap Box Of 75 G X 3</h2>
-                <p>225g bar in box</p>
-                <h2>Rs.385</h2>
-                <button>Add</button>
-            </div>
-        </div>
-        <div>
-            <div id="ima"> <img
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/348123/sebamed-baby-cleansing-bar-150g-1-1654077867.jpg"
-                    alt=""></div>
-            <div id="details">
-                <h2>Tedibar Baby Soap Box Of 75 G X 3</h2>
-                <p>225g bar in box</p>
-                <h2>Rs.385</h2>
-                <button>Add</button>
-            </div>
-        </div>
-        <div>
-            <div id="im"> <img
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/T84730/chicco-baby-moments-soap-75g-1-1641790969.jpg"
-                    alt=""></div>
-            <div id="details">
-                <h2>Tedibar Baby Soap Box Of 75 G X 3</h2>
-                <p>225g bar in box</p>
-                <h2>Rs.385</h2>
-                <button>Add</button>
-            </div>
-        </div>
-    </div>
 
-
+        </div>
+  
+    </div>  -->
+     <hr id="hrLine"> 
+    
 
     <div id="prod">
         <div>
@@ -302,42 +137,106 @@
                     alt=""></div>
             <div id="details">
                 <h2>Tedibar Baby Soap Box Of 75 G X 3</h2>
-                <p>225g bar in box</p>
-                <h2>Rs.385</h2>
+                <p>15% off</p>
+                <h2>₹.385</h2>
                 <button>Add</button>
             </div>
 
         </div>
         <div>
             <div id="ima"> <img
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/V88624/mamaearth-baby-soap-pack-of-4-box-of-300-g-2-1641788587.jpg"
+                    src="https://cdn01.pharmeasy.in/dam/products_otc/N41172/mamaearth-deeply-baby-lotion-bottle-of-100-ml-2-1641788720.jpg?dim=700x0&dpr=1&q=100"
                     alt=""></div>
             <div id="details">
-                <h2>Tedibar Baby Soap Box Of 75 G X 3</h2>
-                <p>225g bar in box</p>
-                <h2>Rs.385</h2>
+                <h2>Mamaearth Deeply Baby Lotion Bottle Of 100 Ml</h2>
+                <p>15% off</p>
+                <h2>₹.425</h2>
                 <button>Add</button>
             </div>
         </div>
         <div>
             <div id="ima"> <img
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/I41140/himalaya-extra-moisturizing-buy-3-get-1-free-baby-soap-box-of-75-g-2-1654251217.jpg"
+                    src="https://cdn01.pharmeasy.in/dam/products_otc/G48731/godrej-good-knight-gold-flash-mosquito-repellent-machine-2-refills-combo-pack-1-unit-1-1641794003.jpg?dim=700x0&dpr=1&q=100"
                     alt=""></div>
             <div id="details">
-                <h2>Tedibar Baby Soap Box Of 75 G X 3</h2>
-                <p>225g bar in box</p>
-                <h2>Rs.385</h2>
+                <h2>Godrej Good Knight  Mosquito Repellent</h2>
+                <p>15% off</p>
+                <h2>₹.205</h2>
                 <button>Add</button>
             </div>
         </div>
         <div>
             <div id="ima"> <img
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/348123/sebamed-baby-cleansing-bar-150g-1-1654077867.jpg"
+                    src="https://cdn01.pharmeasy.in/dam/products_otc/I04915/horlicks-health-nutrition-drink-jar-500-g-2-1655880764.jpg?dim=700x0&dpr=1&q=100"
                     alt=""></div>
             <div id="details">
-                <h2>Tedibar Baby Soap Box Of 75 G X 3</h2>
-                <p>225g bar in box</p>
-                <h2>Rs.385</h2>
+                <h2>Horlicks Health & Nutrition Drink , 500 G</h2>
+                <p>15% off</p>
+                <h2>₹.265</h2>
+                <button>Add</button>
+            </div>
+        </div>
+        <div>
+            <div id="im"> <img
+                    src="https://cdn01.pharmeasy.in/dam/products_otc/Q83701/pharmeasy-all-in-one-vaporizer-1-1654233812.jpg?dim=700x0&dpr=1&q=100"
+                    alt=""></div>
+            <div id="details">
+                <h2>Pharmeasy All-In -One Vaporizer</h2>
+                <p>15% off</p>
+                <h2>₹.269</h2>
+                <button>Add</button>
+            </div>
+        </div>
+    </div>
+
+    <hr id="hrLine">
+
+    <div id="prod">
+        <div>
+            <div id="im"> <img
+                    src="https://cdn01.pharmeasy.in/dam/products_otc/J23800/himalaya-anti-dandruff-shampoo-700ml-2-1654256415.jpg?dim=700x0&dpr=1&q=100"
+                    
+                    alt=""></div>
+            <div id="details">
+                <h2>Himalaya Anti Dandruff Shampoo - 700ml</h2>
+                <p>15% off</p>
+                <h2>₹.428.25</h2>
+                <button>Add</button>
+            </div>
+
+        </div>
+        <div>
+            <div id="ima"> <img
+                    src="https://cdn01.pharmeasy.in/dam/products_otc/181145/vicks-vaporub-5ml-relief-from-cold-cough-headache-and-body-pain-2-1654078120.jpg"
+                    alt=""></div>
+            <div id="details">
+                <h2>Vicks Vaporub 5ml,Relief From Cold</h2>
+                <p>15% off</p>
+                <h2>₹.21.12
+                </h2>
+                <button>Add</button>
+            </div>
+        </div>
+        <div>
+            <div id="ima"> <img
+                    src="https://cdn01.pharmeasy.in/dam/products_otc/M63987/nivea-naturally-good-deodorant-roll-on-bio-aloe-vera-50-ml-2-1641792716.jpg?dim=700x0&dpr=1&q=100"
+                    alt=""></div>
+            <div id="details">
+                <h2>Nivea Naturally Good Deodorant  50 Ml </h2>
+                <p>15% off</p>
+                <h2>₹.385</h2>
+                <button>Add</button>
+            </div>
+        </div>
+        <div>
+            <div id="ima"> <img
+                    src="https://cdn01.pharmeasy.in/dam/products/I14509/protectis-bottle-of-5ml-baby-drops-box-front-1-1612364894.jpg?dim=1440x0"
+                    alt=""></div>
+            <div id="details">
+                <h2>Vizylac Gg Granules 0.75gm
+                </h2>
+                <p>15% off</p>
+                <h2>₹.977.08</h2>
                 <button>Add</button>
             </div>
         </div>
@@ -345,18 +244,18 @@
 
         <div>
             <div id="im"> <img
-                    src="https://cdn01.pharmeasy.in/dam/products_otc/T84730/chicco-baby-moments-soap-75g-1-1641790969.jpg"
+                    src="https://cdn01.pharmeasy.in/dam/products_otc/I13424/spoo-shampoo-bottle-of-125-ml-2-1654256727.jpg"
                     alt=""></div>
             <div id="details">
-                <h2>Tedibar Baby Soap Box Of 75 G X 3</h2>
-                <p>225g bar in box</p>
-                <h2>Rs.385</h2>
+                <h2>Spoo Shampoo Bottle Of 125 Ml</h2>
+                <p>15% off</p>
+                <h2>₹.385</h2>
                 <button>Add</button>
             </div>
         </div>
     </div>
 
-    <hr>
+    <hr id="hrLine">
 
     <div id="det">
 
@@ -380,9 +279,9 @@
         </p>
     </div>
 
-    <hr>
+    <hr id="hrLine">
 
-    <h4>Ratings and Reviews</h4>
+    <h4 id="product_details">Ratings and Reviews</h4>
     <div id="rate">
         <img id="one"
             src="https://uploads-ssl.webflow.com/5ded36b4e942e73f2d468cf9/6082c8c141d4123d060b10d9_ratebadge.png"
@@ -390,59 +289,49 @@
         <img id="two" src="https://weekplan.net/assets/images/uploads/image8-20.png" alt="">
     </div>
 
-    <hr>
+    <hr id="hrLine">
 
-    <h3>Recent Reviews</h3>
+    <h3 id="product_details">Recent Reviews</h3>
     <div id="recent">
-        <p>Raju Bhai Patel</p>
+        <p id="p">Raju Bhai Patel</p>
         <div><img src="images/star.png" alt=""></div>
 
-        <p>"Best quality" </p>
+        <p id="pi">"Best quality" </p>
         <p id="i"> 6 months ago</p>
 
     </div>
 
-    <hr>
+    <hr id="hrLine">
 
     <div id="recent">
-        <p>PharmEasy User</p>
+        <p id="p">PharmEasy User</p>
         <div><img src="images/star.png" alt=""></div>
 
-        <p>"teadybar" </p>
+        <p id="pi">"teadybar" </p>
         <p id="i"> 3 months ago</p>
 
     </div>
 
-    <hr>
+    <hr id="hrLine">
 
     <div id="recent">
-        <p>Muhammed Rince</p>
+        <p id="p">Muhammed Rince</p>
         <div><img src="images/star.png" alt=""></div>
 
-        <p>"I like this product" </p>
+        <p id="pi">"I like this product" </p>
         <p id="i"> 3 weeks ago</p>
 
     </div>
 
 
-    <hr>
+    <hr id="hrLine">
 
-    <h3><a href="">View all Reviews ></a></h3>
+    <h3 id="product_details"><a href="">View all Reviews ></a></h3>
 
     <div id="cle">
-        <div id="article">
-            <div>
+     
                 <h2>Health Articles</h2>
-            </div>
-            <div id="art">
-                <div><a href="">See All</a></div>
-                <div><i class="fa-solid fa-arrow-left"></i></div>
-                <div><i class="fa-solid fa-arrow-right"></i></div>
-
-            </div>
-        </div>
-    </div>
-
+       </div>
 
     <div id="all">
         <div>
@@ -465,7 +354,197 @@
             <h4><a href="">Read More ></a></h4>
         </div>
 
+    </div>
 
+ 
+ </div>
+
+      <div id="right"></div>
+    
+
+
+
+      <div id="bot1">
+        <div>
+          <img
+            src="https://assets.pharmeasy.in/web-assets/dist/9ac2da37.svg?dim=0x72&dpr=1.25&q=100"
+          />
+          <h4>1 Lakh+ Products</h4>
+          <p>
+            We maintain strict quality controls on all our partner retailers, so
+            that you always get standard quality products.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://assets.pharmeasy.in/web-assets/dist/2f258fe0.svg?dim=0x72&dpr=1.25&q=100"
+          />
+          <h4>Secure Payment</h4>
+          <p>100% secure and trusted payment protection</p>
+        </div>
+        <div>
+          <img
+            src="https://assets.pharmeasy.in/web-assets/dist/256fe591.svg?dim=0x72&dpr=1.25&q=100"
+          />
+          <h4>Easy Return</h4>
+          <p>
+            We have a new and dynamic return window policy for medicines and
+            healthcare items. Refer FAQs section for more details.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div id="mob">
+        <div class="mobimg">
+          <img
+            src="https://assets.pharmeasy.in/web-assets/dist/34a16ae8.jpg"
+            alt="mobile App"
+          />
+        </div>
+        <div class="app">
+          <div id="txt">Download the App for Free</div>
+          <div class="logflx">
+            <div class="log">
+              <img
+                src="https://assets.pharmeasy.in/web-assets/dist/3380aedc.png"
+                alt="Google Play"
+              />
+              <p>Google Play</p>
+            </div>
+            <div class="log">
+              <img
+                src="https://assets.pharmeasy.in/web-assets/dist/9bf5c576.png"
+                alt="Apple Store"
+              />
+              <p>Apple Store</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div id="bot3">
+        <div id="b3first">
+          <div id="feat">
+            <div>
+              <h4>Company</h4>
+              <p>Careers</p>
+              <p>Blogs</p>
+              <p>Partner with PharmEasy</p>
+              <h4>Our Services</h4>
+              <p>Order Medicine</p>
+              <p>Healthcare Products</p>
+              <p>Diagnostic Tests</p>
+            </div>
+            <div>
+              <h4>Featured Categories</h4>
+              <p>Covid Essentials</p>
+              <p>Devices</p>
+              <p>Nutriyion and Fitness Suppliments</p>
+              <p>Personal Care</p>
+              <p>Ayurvedic Care</p>
+              <p>Baby and Mom care</p>
+              <p>Skin Care</p>
+              <p>Diabetic Care</p>
+              <p>Sexual Wellness</p>
+              <p>Short term Ailments</p>
+              <p>Lifestyle Ailments</p>
+              <p>Home Care</p>
+              <p>Women Care</p>
+              <p>Health Food and Drinks</p>
+              <p>Ortho Care</p>
+            </div>
+            <div>
+              <h4>Need Help</h4>
+              <p>Browse All Medicines</p>
+              <p>Browse All Molecules</p>
+              <p>FAQs</p>
+              <h4>Policy Info</h4>
+              <p>Editorial Policy</p>
+              <p>Privacy Policy</p>
+              <p>Vulnerability Disclosure Policy</p>
+              <p>Terms and condition</p>
+              <p>Customer Support Policy</p>
+              <p>Return Policy</p>
+            </div>
+          </div>
+          <div id="social">
+            <h4>FOLLOW US</h4>
+            <img
+              src="https://image.flaticon.com/icons/png/128/1384/1384031.png"
+              alt="insta"
+            /><img
+              src="https://image.flaticon.com/icons/png/128/2111/2111392.png"
+              alt="fb"
+            /><img
+              src="https://image.flaticon.com/icons/png/128/1384/1384028.png"
+              alt="YT"
+            /><img
+              src="https://image.flaticon.com/icons/png/128/733/733635.png"
+              alt="twit"
+            />
+            <iframe height="180" src="https://www.youtube.com/embed/a2HUAVYZ3Y8">
+            </iframe>
+          </div>
+        </div>
+        <div id="b3sec">
+          <div id="pay">
+            <h4>Our Payment Partners</h4>
+            <span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/af0c6812.svg"
+                alt=""
+            /></span>
+            <span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/0e010044.svg"
+                alt=""
+            /></span>
+            <span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/1066bb1f.svg"
+                alt=""
+            /></span>
+            <span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/fbea1701.svg"
+                alt="" /></span
+            ><span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/3a1a533d.svg"
+                alt="" /></span
+            ><span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/4733a49d.svg"
+                alt="" /></span
+            ><span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/b278e536.svg"
+                alt="" /></span
+            ><span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/0aca2077.svg"
+                alt="" /></span
+            ><span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/44a51ca5.svg"
+                alt="" /></span
+            ><span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/d058b00d.svg"
+                alt="" /></span
+            ><span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/e9445364.svg"
+                alt="" /></span
+            ><span
+              ><img
+                src="https://assets.pharmeasy.in/web-assets/dist/6e09c713.svg"
+                alt=""
+            /></span>
+          </div>
+          <div id="copy">© 2021 PharmEasy. All Rights Reserved</div>
+        </div>
+      </div>
 
 
 </body>

@@ -6,6 +6,9 @@ appendimg(newlaunches_data)
 
 appenddetails(newlaunches_data)
 
+ appendmrp(newlaunches_data)
+
+
 
 function appendimg(data){
 
@@ -19,19 +22,42 @@ function appendimg(data){
 
 function appenddetails(data){
 
-    let details=document.getElementById("middle")
+     let details=document.getElementById("name")
+    //  let card=document.createElement("div")
+
 
     let title=document.createElement("h2")
     title.innerText=data.name
    
 
-    let mrp=document.createElement("h3")
-    mrp.innerText=data.price
+ 
 
-
-    details.append(title,mrp)
+     details.append(title)
+    // details.append(card)
 }
 
+function appendmrp(data){
+    let mrp=document.getElementById("mrp")
 
+    let mrps=document.createElement("h3")
+    mrps.innerText=data.price
 
+ mrp.append(mrps)
+}
+
+btn.addEventListener("click",()=>{
+    
+    cart(newlaunches_data)
+   })
+   
+   
+   
+   let items=JSON.parse(localStorage.getItem("cart")) || []
+   function cart(element,index){
+       console.log(element )
+   items.push(element);
+   localStorage.setItem("cart",JSON.stringify(items))
+   
+   }
+// console.log(items)
 
