@@ -1,0 +1,94 @@
+
+
+#footer{
+    width: 100%;
+    margin: auto;
+    background-color: #c8d1e2;
+}
+
+
+#bot3 {
+    margin: 0;
+    padding: 5% 5%;
+  }
+  #b3first {
+    display: flex;
+  }
+  #feat {
+    display: flex;
+    flex: 3;
+  }
+  #feat > div {
+    flex-basis: 100%;
+  }
+  #b3first p {
+    color: rgb(79, 88, 94);
+    line-height: 1.1;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  span > img {
+    height: 2rem;
+    margin: 0.5rem;
+  }
+  #b3sec {
+    display: flex;
+    flex-basis: auto;
+  }
+  #pay {
+    flex: 3;
+  }
+  #pay1{
+    padding-top: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #30363c;
+    font-family: sans-serif;
+
+  }
+  #copy {
+    padding-top: 4rem;
+  
+    text-align: left;
+    flex: 1;
+  }
+  #social {
+    margin-left: 10px;
+    flex: 1;
+  }
+  #social>h4{
+    margin-left: 15px;
+  }
+  #social > img {
+    width: 40px;
+    padding: 5px;
+    border-radius: 22px;
+    margin: 0.75rem;
+  }
+  #social > img:hover {
+    transform: scale(1.2);
+  }
+
+  #feat>div> p {
+    padding-bottom: 7px;
+    margin-top: 20px;
+  }
+  #feat h4 {
+    padding-top: 10px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #30363c;
+    font-family: sans-serif;
+  }
+  #feat p:hover {
+    color: rgb(16, 132, 126);
+  }
+  
+  #social > img:hover {
+    transform: scale(1.2);
+  }
+  #pay > span > img {
+    height: 2rem;
+  }
