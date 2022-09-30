@@ -136,7 +136,7 @@
     z-index:  auto !important;
    
   }
-  #offer_div{
+  #offer_divs{
     display: flex;
     gap: 30px;
     font-size: 20px;

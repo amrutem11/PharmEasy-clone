@@ -86,6 +86,7 @@ function appendCategories(data){
         let image=document.createElement("img")
         image.src=el.img
         image.setAttribute("id","image")
+        
         let hr=document.createElement("hr")
 
         let name=document.createElement("h3")
@@ -119,14 +120,14 @@ new_launches_p.innerText="New Launches"
 new_launches_p.style.fontSize="1.5em"
 new_launches_p.style.fontSize= "30px"
 
-let p= document.createElement("p")
-p.innerText="New wellness range just for you!"
-p.style.color="grey"
-p.style.marginTop="15px"
-p.style.fontSize="20px"
-p.style.lineHeight="1"
+let para= document.createElement("p")
+para.innerText="New wellness range just for you!"
+para.style.color="grey"
+para.style.marginTop="15px"
+para.style.fontSize="20px"
+para.style.lineHeight="1"
 
-new_launches.append(new_launches_p,p)
+new_launches.append(new_launches_p,para)
 
 
 
