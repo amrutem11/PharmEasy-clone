@@ -430,6 +430,7 @@ h3 + h5,
     max-width: 220px;
     font-size: 17px;
   }
+  /*  
   #mob {
     width: 70%;
     margin: auto;
@@ -511,7 +512,7 @@ h3 + h5,
     display: flex;
     flex-basis: auto;
   }
-  #pay {
+  #pay1 {
     flex: 3;
   }
   #copy {
@@ -557,4 +558,4 @@ h3 + h5,
   #pay > span > img {
     height: 2rem;
   }
-  
+   */
