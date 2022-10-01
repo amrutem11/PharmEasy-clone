@@ -20,6 +20,7 @@
     position:sticky;
     background-color: white;
     width: 100%;
+    margin-top: 25px;
     
 }
 #pin{
@@ -281,7 +282,7 @@ top: 62px;
     width: 70%;
     margin : auto;
     display: flex;
-    margin-left: 17%;
+    margin-left: 19%;
   }
   #bot1 > div {
     flex-basis: 30.3%;
@@ -390,7 +391,7 @@ top: 62px;
   }
   #social > img {
     width: 50px;
-    background-color: teal;
+    /* background-color: teal; */
     padding: 5px;
     border-radius: 22px;
     margin: 0.75rem;
@@ -398,12 +399,12 @@ top: 62px;
   #social > img:hover {
     transform: scale(1.2);
   }
-  #social > iframe {
+  /* #social > iframe {
     width: 100%;
     border: none;
     border-radius: 6px;
     margin-top: 3rem;
-  }
+  } */
   #feat p {
     padding-bottom: 7px;
   }
