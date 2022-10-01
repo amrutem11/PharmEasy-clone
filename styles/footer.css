@@ -50,8 +50,8 @@
   }
   #copy {
     padding-top: 4rem;
-  
-    text-align: left;
+    margin-right: 100px;
+    text-align: right;
     flex: 1;
   }
   #social {
@@ -91,4 +91,57 @@
   }
   #pay > span > img {
     height: 2rem;
+  }
+
+
+
+
+  #mob {
+    width: 70%;
+    margin: auto;
+    display: flex;
+  }
+  #mob .mobimg img {
+    width: 240px;
+    height: 420px;
+    padding-right: 10px;
+    margin-right: 100px;
+  }
+  .app {
+    width: 400px;
+  }
+  #txt {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #4f585e;
+    margin-left: 2.5%;
+    line-height: 1.25;
+    font-weight: 400;
+  }
+  .logflx {
+    display: flex;
+    margin-top: 30px;
+  }
+  .log {
+    background-color: #4f585e;
+    color: white;
+    min-width: 16rem;
+    margin: 2.5%;
+    padding: 12px 15px;
+    border-radius: 5px;
+  }
+  .log:hover {
+    background-color: rgb(75, 75, 75);
+  }
+  .log > img {
+    width: 25px;
+    float: left;
+  }
+  .log > p {
+    float: left;
+    margin-left: 15px;
+    margin-top: 0;
+    font-size: 14px;
+    padding-top: 8px;
+    letter-spacing: -0.3px;
   }
