@@ -1,6 +1,6 @@
 
 #main{
-    border:0px solid red;
+    border:1px solid red;
     width:75%;
     height: 500px;
     margin: auto;
@@ -25,12 +25,12 @@
      margin-left: 70px; 
 }
 #it{
-    border:0px solid black;
+    border:1px solid black;
     color: rgb(51, 50, 50);
 
 }
 #p{
-    border:0px solid black;
+    border:1px solid black;
     margin-left: 330px;
     margin-top: 30px;
     color: rgb(91, 89, 89);
@@ -192,6 +192,9 @@
     width:60%;
     height: 80px;
  }
+ #notes{
+    border:1px solid green;
+ }
 
  #notes>h1{
     border:0px solid red;
@@ -207,7 +210,7 @@
     border-radius: 5px;
     border: 1px solid rgb(153, 149, 149);
  }
- #List{
+ #lis{
     border:1px solid red;
     /* margin-top: 1000px;
     margin-left: -670px;
