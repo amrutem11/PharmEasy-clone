@@ -57,7 +57,7 @@ btn.addEventListener("click",function(){
 })
 
 let carts = JSON.parse(localStorage.getItem("cart"))||[]
-console.log(carts)
+//console.log(carts)
 function tocart(){
     localStorage.setItem("cart",JSON.stringify(newlaunches_data))
     window.location.href="cart.html"
@@ -72,7 +72,7 @@ btn.addEventListener("click",()=>{
    
    let items=JSON.parse(localStorage.getItem("cart")) || []
    function cart(element,index){
-       console.log(element )
+       //console.log(element )
    items.push(element);
    localStorage.setItem("cart",JSON.stringify(items))
    

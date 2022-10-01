@@ -145,3 +145,21 @@
     padding-top: 8px;
     letter-spacing: -0.3px;
   }
+
+  #bot1 {
+    width: 70%;
+    margin : auto;
+    display: flex;
+    margin-left: 15%;
+  }
+  #bot1 > div {
+    flex-basis: 30.3%;
+    margin: 1.5%;
+    padding: 40px 24px;
+  }
+  #bot1 > div > p {
+    color: #8897a2;
+    line-height: 1.2;
+    max-width: 220px;
+    font-size: 17px;
+  }
