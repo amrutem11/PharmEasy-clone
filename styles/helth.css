@@ -23,6 +23,22 @@
       cursor:pointer
     }
 
+    #count {
+      position: absolute;
+      top: -4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f47779;
+      border: 0.5px solid #fff;
+      border-radius: 8px;
+      width: 16px;
+      height: 16px;
+      color: #fff;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 16px;
+    }
   #complete {
     width: 95%;
     height: 15%;

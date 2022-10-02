@@ -39,7 +39,7 @@
 
  
  #middle{
-    width:770px;
+    width:700px;
     height: 500px;
     border:0px solid black
  }
@@ -560,7 +560,7 @@ span > img {
 }
 
 #right>button{
-    width: 90%;
+    width: 60%;
     padding: 12px;
    background-color: #10847e;
     border: 1px solid #10847e;
@@ -586,7 +586,7 @@ span > img {
     /* position: sticky; */
    
     position: absolute;
-    margin-left: 1250px;
+    margin-left: 1150px;
     margin-top: -2990px;
  }
 
@@ -616,7 +616,7 @@ span > img {
 
  }
  #right > button{
-    width: 105%;
+    width: 90%;
     height: 60px;
     margin-top: 50px;
     margin-bottom: 50px;
