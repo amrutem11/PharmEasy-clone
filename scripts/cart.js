@@ -123,7 +123,7 @@ function appendrs(data){
 
 function appendRs(data){
 
-    data.forEach(element => {
+   
     let mrp=document.getElementById("Rs")
 
     let mrps=document.createElement("h6")
@@ -131,7 +131,7 @@ function appendRs(data){
 
  mrp.append(mrps)
 
-})
+
 }
 
 document.getElementById("dele").addEventListener("click",function(){
@@ -153,7 +153,7 @@ function address(){
 let gotohome= document.getElementById("logo")
 
 gotohome.addEventListener("click",function(){
-   console.log("checlk")
+   //console.log("checlk")
 
    window.location.href="index.html"
 })

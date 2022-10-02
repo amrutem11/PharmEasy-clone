@@ -11,7 +11,7 @@ function deliver(){
         }else if (count==2) {
           alert(" Order Packed")
         }else if (count==4) {
-            alert("Out Of Delivery")
+            alert("Out for Delivery")
           }else if (count==6) {
             alert("Expect Delivery by 8 Oct")
           }else if (count==8) {

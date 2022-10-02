@@ -144,18 +144,18 @@
     border: 00.5px solid grey;
   }
 
-  #marquee {
+   #marquee {
     margin-top: 70px;
-    z-index: auto !important;
+    z-index:  auto !important;
 
-  
-  }
-  #marquee img {
+   
+   }
+  #marquee >img {
     margin-left: 40px;
-    border-radius: 20px;
+    border-radius: 20px; 
     z-index:  auto !important;
    
-  }
+  } 
   #offer_divs{
     display: flex;
     gap: 30px;
@@ -165,7 +165,7 @@
     /* margin-left: 30px; */
   }
   .offer_inside{
-    margin-top: 50px;
+    margin-top: 30px;
     display: flex;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    /* border: 1px solid grey; */

@@ -142,7 +142,7 @@ let addto=document.getElementById("right")
 let btn=document.getElementById("bat")
 btn.innerText="View Cart";
 
-addto.append(btn)
+//addto.append(btn)
 btn.addEventListener("click",function(){
     tocart()
 })
@@ -155,12 +155,13 @@ function tocart(){
 
     localStorage.setItem("cart",JSON.stringify(carts))
 
-    window.location.href="cart1.html"
+    window.location.href="cart1.html";
+
 }
 
 btn.addEventListener("click",()=>{
     
-    cart(newlaunches_data)
+       cart(newlaunches_data)
    })
     
    

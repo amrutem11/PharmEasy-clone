@@ -593,7 +593,7 @@ span > img {
  #el2{
     border: 1px dashed red;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 100px;
     padding: 10px;
     border-radius: 10px;
  }
@@ -602,6 +602,7 @@ span > img {
     grid-template-columns: 10% 86%;
     grid-row: auto;
     gap: 4%;
+    margin-top: 30px;
 }
 #el > div {
    margin-top: 10px;
@@ -610,12 +611,15 @@ span > img {
     width: 100%;
  }
  #right > h2{
-    margin-top: 50px;
+    margin-top: 10px;
+    /* margin-bottom: 30px; */
+
  }
  #right > button{
     width: 105%;
     height: 60px;
-    margin-top: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     font-size: 25px;
     background-color: #0D7767;
     color: whitesmoke;
