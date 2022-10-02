@@ -108,14 +108,24 @@ span{
     margin: auto;
     margin-top: 10px;
     justify-content: space-around;
+
 }
 #change > a {
     text-decoration: none;
     margin-top: 20px;
     font-size: 17px;
     font-weight: 500;
+
+   
 }
 
+#closetoindex{
+    color: #36363c;
+}
 #main_nav{
     display: none;
+}
+.logoimageinlogin{
+    width: 75%;
+    height: 80%;
 }

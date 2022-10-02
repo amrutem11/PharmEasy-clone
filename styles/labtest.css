@@ -32,6 +32,9 @@ hr{
 .box2 > p{
    color: lightslategray;
 }
+#logo{
+  cursor:pointer
+}
 
   #navbar{
     display: flex;

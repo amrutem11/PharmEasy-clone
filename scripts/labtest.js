@@ -128,3 +128,11 @@ function test2(e) {
   console.log(current1, nextslide1);
   moveit1(track1, current1, nextslide1);
 }
+
+let gotohome= document.getElementById("logo")
+
+gotohome.addEventListener("click",function(){
+   console.log("checlk")
+
+   window.location.href="index.html"
+})

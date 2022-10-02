@@ -19,7 +19,9 @@
       width: 100%;
       height: 350px;
      }
-     
+     #logo{
+      cursor:pointer
+    }
 
   #complete {
     width: 95%;

@@ -31,11 +31,16 @@
     margin-bottom: 7px;
     width: 100%;
   }
+  #logo{
+
+    cursor: pointer;
+  }
   #pin {
     display: block;
   }
   #navbar > img {
     margin-left: 80px;
+    cursor: pointer;
   }
 
   #search {
@@ -484,7 +489,7 @@
 
     
     <div id="navbar">
-      <img id="logo" src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=360x0" alt="">
+    <img id="logo" src="https://assets.pharmeasy.in/apothecary/images/logo_big.svg?dim=360x0" alt="">
       <hr>
       <div id="pin">
           <div>
@@ -536,9 +541,9 @@
           <a href="./medicine.html">Medicine</a>
           <a href="./healthcare.html">Healthcare</a>
           <a href="./labtest.html">Lab Test</a>
-          <a href="">Offers</a>
+          <a href="./offer.html">Offers</a>
           <a href="">PLUS</a>
-          <a href="">Health Blogs</a>
+          <a href="./blog.html">Health Blogs</a>
           
      
      </div>
@@ -1250,4 +1255,14 @@ Our Phlebotomist will reach your home on time or before, otherwise you will get 
         this.classList.toggle('active');
     })
   }
+
+
+ let gotohome= document.getElementById("logo")
+
+ gotohome.addEventListener("click",function(){
+    console.log("checlk")
+
+    window.location.href="index.html"
+})
+
 </script>

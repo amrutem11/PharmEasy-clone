@@ -1,86 +1,159 @@
 
-let arr = JSON.parse(localStorage.getItem('cart'));
-console.log(arr)
+
+let carts = JSON.parse(localStorage.getItem("cart"))
+//let items=JSON.parse(localStorage.getItem("cart")) || []
+
+//console.log("cart:",items)
+let count= carts.length
+console.log(count)
+appendimg(carts)
+
+appenddetails(carts)
+
+ appendmrp(carts)
+
+ appendrs(carts)
+
+ appendRs(carts)
+
+
+  
+
+
+// function appendimg(data){
+//     console.log(data)
+
+//    data.forEach(el => {
+//     let soap=document.getElementById("items")
+
+//     let card=document.createElement("div")
+
+
+//     let image=document.createElement("img")
+//     image.src=el.img
+//     console.log(image)
+
+//     let title=document.createElement("h2")
+//     title.innerText=el.name
+
+//     let mrps=document.createElement("p")
+//     mrps.innerText=el.price
+
+//     let del = document.createElement('p');
+//     del.innerText = 'Delivery By 08 Oct - 09 Oct'
+
+//     let delImg = document.createElement('img');
+//     delImg.src='https://assets.pharmeasy.in/web-assets/dist/2fb50086.svg'
+     
+//     card.append(image,title,mrps,del,delImg);
+//     soap.append(card)
+//    });
+
+   
+// }
+
+
+
+function appendimg(data){
+    console.log(data)
 
  
-const appendItem = (data) => {
+    let soap=document.getElementById("left")
+
+    //let card=document.createElement("div")
 
 
-data.forEach(function (ele){
-    console.log(ele.img)
-    let cont = document.getElementById('img1');
-    cont.innerHTML=null;
+    let image=document.createElement("img")
+    image.src=data[0].img
+    console.log(image)
+     
+    
+    soap.append(image)
 
-    let image = document.createElement('img');
-    image.src=ele.img;
 
-    cont.append(image)
-})
+   
+}
+
+function appenddetails(data){
+
+   
+
+     let details=document.getElementById("name")
+    // let card=document.createElement("div")
+     
+    //  let card=document.createElement("div")
+
+
+    let title=document.createElement("h2")
+    title.innerText=data[0].name
+
+ 
+   
+     details.append(title)
+    // details.append(card)
+
+}
+
+function appendmrp(data){
+
+   
+
+      //  let card=document.createElement("div")
+    let mrp=document.getElementById("mrp")
+
+    let mrps=document.createElement("p")
+    mrps.innerText=data[0].price
+
+ mrp.append(mrps)
 
 
 }
 
-appendItem(arr)
+
+function appendrs(data){
+    let mrp=document.getElementById("rs")
+
+    let mrps=document.createElement("h6")
+    mrps.innerText=data[0].price
+
+ mrp.append(mrps)
+
+}
 
 
+function appendRs(data){
 
-// let carts = JSON.parse(localStorage.getItem("cart"))
-// console.log("cart:",carts)
+    data.forEach(element => {
+    let mrp=document.getElementById("Rs")
 
-// appendimg(carts)
+    let mrps=document.createElement("h6")
+    mrps.innerText=data[0].price
 
-// appenddetails(carts)
+ mrp.append(mrps)
 
-//  appendmrp(carts)
+})
+}
 
+document.getElementById("dele").addEventListener("click",function(){
+    Dele()
+})
 
+function Dele(){
+    document.getElementById("items").innerHTML=null
+}
 
-// function appendimg(data){
-//     //console.log(data)
+document.getElementById("msec").addEventListener("click",function(){
+    address()
+})
 
-//     let soap=document.getElementById("left")
+function address(){
+    window.location.href="delivery.html"
+}
 
-//     let image=document.createElement("img")
-//     image.src=data.img
-//     console.log(image)
+let gotohome= document.getElementById("logo")
 
-//     soap.append(image)
-// }
+gotohome.addEventListener("click",function(){
+   console.log("checlk")
 
-// function appenddetails(data){
-
-//      let details=document.getElementById("name")
-//     //  let card=document.createElement("div")
-
-
-//     let title=document.createElement("h2")
-//     title.innerText=data.name
-
- 
-
-//      details.append(title)
-//     // details.append(card)
-// }
-
-// function appendmrp(data){
-//     let mrp=document.getElementById("mrp")
-
-//     let mrps=document.createElement("h3")
-//     mrps.innerText=data.price
-
-//  mrp.append(mrps)
-
-//  let del=document.getElementById("delete")
-// del.addEventListener("click",function(){
-//     todelete()
-// })
-// }
-
-
-
-// // todelete(){
-   
-// //         console.log(index);
-// //         arrProductData.splice(index, 1)
-// // }
-
+   window.location.href="index.html"
+})
