@@ -3,6 +3,11 @@
  * {
     font-family: Open Sans, sans-serif !important;
   } 
+  /* *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+ } */
 
   /* *{
     margin: 0;
@@ -249,6 +254,5 @@
     height: 2rem;
   }
 
-
-
+ 
   

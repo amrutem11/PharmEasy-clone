@@ -43,6 +43,7 @@ hr{
     position:sticky;
     background-color: white;
     width: 100%;
+    margin-top: 25px;
     
 }
 #pin{
@@ -416,7 +417,7 @@ h3 + h5,
     width: 70%;
     margin : auto;
     display: flex;
-    margin-left: 15%;
+    margin-left: 21%;
   }
   #bot1 > div {
     flex-basis: 30.3%;
@@ -429,11 +430,12 @@ h3 + h5,
     max-width: 220px;
     font-size: 17px;
   }
+  /*  
   #mob {
     width: 70%;
     margin: auto;
     display: flex;
-    margin-left: 19%;
+    margin-left: 13%;
   }
   #mob .mobimg img {
     width: 240px;
@@ -510,7 +512,7 @@ h3 + h5,
     display: flex;
     flex-basis: auto;
   }
-  #pay {
+  #pay1 {
     flex: 3;
   }
   #copy {
@@ -525,7 +527,7 @@ h3 + h5,
   }
   #social > img {
     width: 50px;
-    background-color: teal;
+    /* background-color: teal; */
     padding: 5px;
     border-radius: 22px;
     margin: 0.75rem;
@@ -533,12 +535,12 @@ h3 + h5,
   #social > img:hover {
     transform: scale(1.2);
   }
-  #social > iframe {
+  /* #social > iframe {
     width: 100%;
     border: none;
     border-radius: 6px;
     margin-top: 3rem;
-  }
+  } */
   #feat p {
     padding-bottom: 7px;
   }
@@ -556,4 +558,4 @@ h3 + h5,
   #pay > span > img {
     height: 2rem;
   }
-  
+   */

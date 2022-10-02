@@ -28,6 +28,7 @@ function appenddetails(data){
 
     let title=document.createElement("h2")
     title.innerText=data.name
+   
 
  
 
@@ -44,6 +45,7 @@ function appendmrp(data){
  mrp.append(mrps)
 }
 
+
 let addto=document.getElementById("right")
 
 let btn=document.createElement("button")
@@ -55,8 +57,25 @@ btn.addEventListener("click",function(){
 })
 
 let carts = JSON.parse(localStorage.getItem("cart"))||[]
-console.log(carts)
+//console.log(carts)
 function tocart(){
     localStorage.setItem("cart",JSON.stringify(newlaunches_data))
     window.location.href="cart.html"
 }
+
+btn.addEventListener("click",()=>{
+    
+    cart(newlaunches_data)
+   })
+   
+   
+   
+   let items=JSON.parse(localStorage.getItem("cart")) || []
+   function cart(element,index){
+       //console.log(element )
+   items.push(element);
+   localStorage.setItem("cart",JSON.stringify(items))
+   
+   }
+// console.log(items)
+
