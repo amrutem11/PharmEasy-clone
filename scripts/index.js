@@ -81,6 +81,12 @@ function appendCategories(data){
     data.forEach((el,index)=>{
 
         let div = document.createElement("div")
+
+        div.id="container"
+     
+   
+     
+
         div.id="container";
         // div.addEventListener("click",function(){
         //     if(arr2[0]){
@@ -88,8 +94,7 @@ function appendCategories(data){
         //     }
           
         // })
-        
-    
+
         
         let image=document.createElement("img")
         image.src=el.img
@@ -115,7 +120,16 @@ function appendCategories(data){
         data_div.append(div)
 
 
+
+        if([arr2[index[name]]]==="medicine"){
+        
+        }
+
+
     })
+
+
+
 }
 appendCategories(data)
 
@@ -964,6 +978,7 @@ appendhealtharticle(heatharticle_arr)
 
 
 
+
 let gotohome= document.getElementById("logo")
 
 
@@ -984,5 +999,6 @@ gotohome.addEventListener("click",function(){
 //     })
     
 // }
+
 
 
