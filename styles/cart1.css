@@ -7,7 +7,7 @@
 }
 #mcart{
     width: 100%;
-    height: 400px;
+    height: 300px;
     /* border: 1px solid red; */
     margin: auto;
     display: flex;
@@ -15,8 +15,9 @@
 #mmain{
     width: 65%;
     height: 95%;
-    border: 1px solid teal;
+    border: 0px solid teal;
     /* margin: auto; */
+    margin-top: 20px;
 
 }
 #head{
@@ -24,10 +25,16 @@
     justify-content: space-between;
 }
 #items{
-    border: 1px solid black;
+    border: 1px solid #4f585e ;
     width: 100%;
     height: 70%;
+    display: flex;
+    border-radius: 5px;
+    margin-top: 20px;
+    /* color: #4f585e */
+    
 }
+
 #mside{
     width: 30%;
     /* height: 95%; */
@@ -84,7 +91,7 @@
     height: 500px;
     /* border: 1px solid blue; */
    /* margin-left: 150px; */
-   margin-top: 70px;
+   margin-top:70px;
 }
 #suggest{
     width: 100%;
@@ -118,27 +125,38 @@
     border-radius: 5px;
     font-size: 14px;
     font-weight: 700;
-    margin-left: 40px;
+    margin-left: 2px;
 }
 #notes{
-    width: 70%;
+    width: 60%;
     /* border: 1px solid red; */
     color: #4f585e;
+
+    text-align: left;
+
+    margin-top: -100px;
+
 
 }
 #notes > input{
     width: 90%;
-    padding: 30px;
-    border-radius: 10px;
 
+    padding: 10px;
+
+    /* padding: 20px; */
+
+    border-radius: 10px;
+    margin-left: -5px;
+    /* margin-top: -10px; */
 }
 #ullist{
     width: 60%;
+    margin-top: 30px;
 
 }
 #ullist li {
     font-size: 20px;
-    margin-top: 10px;
+    /* margin-top: -10px; */
     color: #4f585e;
 }
 #ullist span a{
@@ -163,7 +181,39 @@
     margin-top: 20px;
     margin-right: 20px;
 }
+
 #items img{
-    width: 160px;
-    height: 160px;
+    width: 100px;
+    height:100px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
+#det{
+    width:70%;
+    margin-left: 70px;
+}
+#det>div{
+    margin-top: 10px;
+}
+#det>h4{
+    margin-top: 20px;
+}
+#del>img{
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 30px;
+}
+
+select{
+    width:100px;
+    height: 40px;
+    border-radius: 5px solid #4f585e;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#4f585e
+
+}
+

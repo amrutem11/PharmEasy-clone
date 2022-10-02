@@ -676,3 +676,10 @@ var imgarr = [
     }
   }
   
+  let gotohome= document.getElementById("logo")
+
+  gotohome.addEventListener("click",function(){
+     console.log("checlk")
+ 
+     window.location.href="index.html"
+ })

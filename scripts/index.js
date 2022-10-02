@@ -34,6 +34,7 @@ let arr2=[
         img:"https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=720x0",
         name:"Medicine",
         off:"UPTO 20% OFF"
+        
     },
     {
         img:"https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=720x0",
@@ -80,11 +81,20 @@ function appendCategories(data){
     data.forEach((el,index)=>{
 
         let div = document.createElement("div")
+
         div.id="container"
      
    
      
-    
+
+        div.id="container";
+        // div.addEventListener("click",function(){
+        //     if(arr2[0]){
+        //         window.location.href="medicine.html"
+        //     }
+          
+        // })
+
         
         let image=document.createElement("img")
         image.src=el.img
@@ -965,5 +975,30 @@ function appendhealtharticle(heatharticle_arr){
 
 }
 appendhealtharticle(heatharticle_arr)
+
+
+
+
+let gotohome= document.getElementById("logo")
+
+
+gotohome.addEventListener("click",function(){
+   console.log("checlk")
+
+   window.location.href="index.html"
+})
+
+
+//     let frequentlysearcheditemsinsearchbar=document.getElementsByClassName('frequentlysearched');
+   
+
+//     for(i=0;i<frequentlysearcheditemsinsearchbar.length;i++){
+//        document.getElementById("searchinput").addEventListener("click",function(){
+//           this.classList.toggle('active');
+    
+//     })
+    
+// }
+
 
 
