@@ -966,8 +966,23 @@ appendhealtharticle(heatharticle_arr)
 
 let gotohome= document.getElementById("logo")
 
+
 gotohome.addEventListener("click",function(){
    console.log("checlk")
 
    window.location.href="index.html"
 })
+
+
+//     let frequentlysearcheditemsinsearchbar=document.getElementsByClassName('frequentlysearched');
+   
+
+//     for(i=0;i<frequentlysearcheditemsinsearchbar.length;i++){
+//        document.getElementById("searchinput").addEventListener("click",function(){
+//           this.classList.toggle('active');
+    
+//     })
+    
+// }
+
+

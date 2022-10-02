@@ -22,7 +22,7 @@ const verifyOtp = () => {
     let enteredOtp = document.getElementById('otp').value;
     if(OTP == enteredOtp){
         alert('Login Successful');
-        window.location.href='index.html';
+        window.location.href='user.html';
         
        
     }
