@@ -81,6 +81,9 @@ function appendCategories(data){
 
         let div = document.createElement("div")
         div.id="container"
+     
+   
+     
     
         
         let image=document.createElement("img")
@@ -107,7 +110,16 @@ function appendCategories(data){
         data_div.append(div)
 
 
+
+        if([arr2[index[name]]]==="medicine"){
+        
+        }
+
+
     })
+
+
+
 }
 appendCategories(data)
 
@@ -954,18 +966,4 @@ function appendhealtharticle(heatharticle_arr){
 }
 appendhealtharticle(heatharticle_arr)
 
-
-
-
-
-//     let frequentlysearcheditemsinsearchbar=document.getElementsByClassName('frequentlysearched');
-   
-
-//     for(i=0;i<frequentlysearcheditemsinsearchbar.length;i++){
-//        document.getElementById("searchinput").addEventListener("click",function(){
-//           this.classList.toggle('active');
-    
-//     })
-    
-// }
 
