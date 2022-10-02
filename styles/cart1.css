@@ -124,11 +124,12 @@
     width: 70%;
     /* border: 1px solid red; */
     color: #4f585e;
+    text-align: left;
 
 }
 #notes > input{
     width: 90%;
-    padding: 30px;
+    padding: 10px;
     border-radius: 10px;
 
 }

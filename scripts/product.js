@@ -60,14 +60,14 @@ let carts = JSON.parse(localStorage.getItem("cart"))||[]
 //console.log(carts)
 function tocart(){
     localStorage.setItem("cart",JSON.stringify(newlaunches_data))
-    window.location.href="cart.html"
+    window.location.href="cart1.html"
 }
 
 btn.addEventListener("click",()=>{
     
     cart(newlaunches_data)
    })
-   
+    
    
    
    let items=JSON.parse(localStorage.getItem("cart")) || []
