@@ -1,7 +1,7 @@
 # ready-lock-9044
 
 # PharmEasy 
-[Live site](https://benevolent-queijadas-e1523f.netlify.app)
+Netlify Link : https://benevolent-queijadas-e1523f.netlify.app/
 
 
 PharmEasy - India's biggest online medical store offering various medicines and lab tests. A Collaborative project completed with five aspiring developers .
